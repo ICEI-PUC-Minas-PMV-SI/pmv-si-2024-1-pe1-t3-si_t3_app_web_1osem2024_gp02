@@ -22,11 +22,11 @@ Implementar um sistema de informação capaz de registrar o empréstimo ou alugu
 
 * Específicos:
 
-*Implementar a funcionalidade de login.
-*Implementar a funcionalidade de cadastro de condomínios.
-*Implementar a funcionalidade de cadastro de moradores, incluindo dados da residência.
-*Implementar a funcionalidade de cadastro de síndico.
-Implementar a funcionalidade de cadastro de vagas vinculadas aos moradores e suas residências.
+Implementar a funcionalidade de login;
+Implementar a funcionalidade de cadastro de condomínios;
+Implementar a funcionalidade de cadastro de moradores, incluindo dados da residência;
+Implementar a funcionalidade de cadastro de síndico;
+Implementar a funcionalidade de cadastro de vagas vinculadas aos moradores e suas residências;
 Implementar a funcionalidade de cadastro de disponibilidade da vaga;
 Implementar a funcionalidade de cadastro de valores da vaga;
 Implementar a funcionalidade de busca por vagas;
