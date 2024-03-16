@@ -1,10 +1,10 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+--Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
 
-Quais são os efeitos de um sistema de informação sobre a organização, rastreabilidade e segurança das reservas de vagas de garagem dentro de um condomínio, quando comparado ao método de reservas via WhatsApp?
+* Quais são os efeitos de um sistema de informação sobre a organização, rastreabilidade e segurança das reservas de vagas de garagem dentro de um condomínio, quando comparado ao método de reservas via WhatsApp?
 
 --Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
 --Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
@@ -16,11 +16,11 @@ Quais são os efeitos de um sistema de informação sobre a organização, rastr
 
 ## Objetivos
 
-Gerais:
+* Gerais:
 
 Implementar um sistema de informação capaz de registrar o empréstimo ou aluguel de vagas de garagem dentro de um condomínio, visando melhorar os critérios de organização, rastreabilidade e segurança.
 
-Específicos:
+* Específicos:
 
 Implementar a funcionalidade de login;
 Implementar a funcionalidade de cadastro de condomínios;
@@ -48,14 +48,14 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Demonstraremos, por meio do estudo e desenvolvimento de um sistema de informação, que é possível melhorar a organização, segurança e rastreabilidade do empréstimo e/ou aluguel de vagas de garagem dentro de um condomínio.
+* Demonstraremos, por meio do estudo e desenvolvimento de um sistema de informação, que é possível melhorar a organização, segurança e rastreabilidade do empréstimo e/ou aluguel de vagas de garagem dentro de um condomínio.
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-O projeto tem como público-alvo os condomínios e seus moradores que possuem vagas de garagem não utilizadas ou disponíveis em certos horários e que desejam uma forma de renda extra. Além disso, destina-se aos moradores que necessitam de mais vagas de garagem do que as que possuem.
+* O projeto tem como público-alvo os condomínios e seus moradores que possuem vagas de garagem não utilizadas ou disponíveis em certos horários e que desejam uma forma de renda extra. Além disso, destina-se aos moradores que necessitam de mais vagas de garagem do que as que possuem.
 
 --Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
