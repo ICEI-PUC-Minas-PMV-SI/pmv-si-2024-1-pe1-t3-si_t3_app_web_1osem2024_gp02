@@ -6,7 +6,6 @@ Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o pr
 Quais são os efeitos de um sistema de informação sobre a organização, rastreabilidade e segurança das reservas de vagas de garagem dentro de um condomínio, quando comparado ao método de reservas via WhatsApp?
 
 *Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
 *Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 > **Links Úteis**:
@@ -16,8 +15,31 @@ Quais são os efeitos de um sistema de informação sobre a organização, rastr
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Gerais:
 
+Implementar um sistema de informação capaz de registrar o empréstimo ou aluguel de vagas de garagem dentro de um condomínio, visando melhorar os critérios de organização, rastreabilidade e segurança.
+
+Específicos:
+
+Implementar a funcionalidade de login;
+Implementar a funcionalidade de cadastro de condomínios;
+Implementar a funcionalidade de cadastro de moradores, incluindo dados da residência;
+Implementar a funcionalidade de cadastro de síndico;
+Implementar a funcionalidade de cadastro de vagas vinculadas aos moradores e suas residências;
+Implementar a funcionalidade de cadastro de disponibilidade da vaga;
+Implementar a funcionalidade de cadastro de valores da vaga;
+Implementar a funcionalidade de busca por vagas;
+Implementar a funcionalidade de solicitação de reserva;
+Implementar a funcionalidade de aprovação de reserva;
+Implementar a funcionalidade de rejeição de reserva;
+Implementar a funcionalidade de notificação aos envolvidos;
+Implementar a funcionalidade de cadastro de veículo do morador locatário;
+Implementar a funcionalidade de chat entre os moradores envolvidos na reserva;
+Implementar a funcionalidade de avaliação dos envolvidos.
+
+
+
+*Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
  
 > **Links Úteis**:
@@ -32,10 +54,12 @@ Demonstraremos, por meio do estudo e desenvolvimento de um sistema de informaç�
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O projeto tem como público-alvo os condomínios e seus moradores que possuem vagas de garagem não utilizadas ou disponíveis em certos horários e que desejam uma forma de renda extra. Além disso, destina-se aos moradores que necessitam de mais vagas de garagem do que as que possuem.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+*Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
+hierárquicas, etc.
+*Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
