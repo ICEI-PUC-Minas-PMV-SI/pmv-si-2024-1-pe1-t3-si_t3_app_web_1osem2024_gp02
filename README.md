@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# SAVG - Sistema de Aluguel de Vagas de Garagem
 
-`CURSO`
+`Sistemas de Informação - EAD`
 
-`DISCIPLINA`
+`Projeto: Aplicações Web - Turma 3 - Grupo 2`
 
-`SEMESTRE`
+`1º Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Criação de um sistema que permite o empréstimo ou aluguel de vagas de garagem, possibilitando a organização, registro e melhoria da segurança durante todo o processo de empréstimo ou aluguel de vagas. Isso será alcançado por meio da implementação de funcionalidades como o cadastro organizado de vagas, autenticação por login e senha, cadastro de condomínios, moradores e síndicos, sistema de busca de vagas, solicitação e reserva de vagas disponíveis, bem como a abertura de chat para registro de negociações entre locador e locatário.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Julio Cesar Claudino Carvalho
+* Giovanny Lisboa
+* Felipe Lemos de Lima
+* Beatriz Maria Fagundes Oliveira
+* Lucas Vieira Ferreira Diogo
+* Edlamary Aparecida Diniz Silva
 
 ## Orientador
 
-* Nome completo do professor 1
+* Nesley Jesus Daher de Oliveira
 
 ## Instruções de utilização
 
