@@ -23,6 +23,9 @@ Implementar um sistema de informação capaz de registrar o empréstimo ou alugu
 * Específicos:
 
 Implementar a funcionalidade de login.
+implementar a funcionalidade de cadastro de condominions.
+
+Implementar a funcionalidade de login.
 Implementar a funcionalidade de cadastro de condomínios.
 Implementar a funcionalidade de cadastro de moradores, incluindo dados da residência.
 Implementar a funcionalidade de cadastro de síndico.
