@@ -22,21 +22,33 @@ Implementar um sistema de informação capaz de registrar o empréstimo ou alugu
 
 * Específicos:
 
-Implementar a funcionalidade de login;
-Implementar a funcionalidade de cadastro de condomínios;
-Implementar a funcionalidade de cadastro de moradores, incluindo dados da residência;
-Implementar a funcionalidade de cadastro de síndico;
-Implementar a funcionalidade de cadastro de vagas vinculadas aos moradores e suas residências;
-Implementar a funcionalidade de cadastro de disponibilidade da vaga;
-Implementar a funcionalidade de cadastro de valores da vaga;
-Implementar a funcionalidade de busca por vagas;
-Implementar a funcionalidade de solicitação de reserva;
-Implementar a funcionalidade de aprovação de reserva;
-Implementar a funcionalidade de rejeição de reserva;
-Implementar a funcionalidade de notificação aos envolvidos;
-Implementar a funcionalidade de cadastro de veículo do morador locatário;
-Implementar a funcionalidade de chat entre os moradores envolvidos na reserva;
-Implementar a funcionalidade de avaliação dos envolvidos.
+Debater com síndicos e moradores de condomínios a respeito de empréstimo e locação de vagas de garagem 
+
+Analisar casos de empréstimos via WhatsApp para melhor compreensão do problema 
+
+Debater entre o grupo os problemas identificados 
+
+Definir o problema a ser resolvido 
+
+Debater entre o grupo as possíveis soluções a serem desenvolvidas 
+
+Organizar as atividades a serem desenvolvidas com seus respectivos prazos e responsáveis  
+
+Criar a documentação do projeto 
+
+Identificar os requisitos do sistema 
+
+Ilustrar as funcionalidades através do protótipo  
+
+Criar as funcionalidades da aplicação web 
+
+Criar um caderno de testes 
+
+Analisar se todos os requisitos foram atendidos 
+
+Demonstrar a utilização do sistema para moradores e síndicos 
+
+Analisar o funcionamento da aplicação em um cenário real 
 
 
 
