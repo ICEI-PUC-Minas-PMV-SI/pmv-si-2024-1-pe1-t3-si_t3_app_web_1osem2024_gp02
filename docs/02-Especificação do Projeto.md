@@ -39,24 +39,32 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-| Administrador | Criar um condomínio | Permitir que moradores entrem e participem das negociações |
+| Administrador | Criar um condomínio e definir as regras de participação | Permitir que moradores entrem e participem das negociações |
+| Administrador | Controlar quais usuários podem entrar e quais devem ser removidos do condomínio | Garantir um ambiente seguro e justo para todos que usam o aplicativo |
 | Administrador | Receber alertas sobre solicitações de ajuda | Mediar conflitos |
-| Administrador | Ter acesso aos registros de reservas | Consultar informações de forma eficiente e mediar conflitos |
-| Administrador | Poder remover um usuário que descumpriu os acordos do condomínio | Garantir um ambiente seguro e justo para todos que usam o aplicativo |
-| Locatário |  |  |
-| Locatário |  |  |
-| Locatário |  |  |
-| Locatário |  |  |
-| Locatário |  |  |
-| Locatário |  |  |
+| Administrador | Ter acesso aos registros de reservas e negociações de forma estruturada | Consultar informações de forma eficiente e mediar conflitos |
+| Locador | Criar um perfil e cadastrar minhas informações de contato, do meu apartamento e da minha vaga | Poder ser identificado e ingressar em um condomínio |
+| Locador | Anunciar minha vaga e informar o período, valor e recorrência da disponibilidade | Alcançar usuários que precisam ocupar uma vaga nas mesmas condições |
+| Locador | Ter um canal para responder dúvidas sobre a vaga antes de receber a proposta de reserva | Facilitar o acesso à informações e agilizar as negociações |
+| Locador | Receber propostas de reserva com detalhes como período e método de pagamento, bem como sobre o perfil do locatário e suas avaliações | Avaliar as propostas de forma eficiente e tomar decisões bem fundamentadas |
+| Locador | Conversar com o usuário solicitante pra negociar as condições antes de resolver a solicitação de reserva | Poder ajustar detalhes sobre a reserva e pagamento antes de resolver a negociação |
+| Locador | Poder aceitar ou rejeitar uma solicitação de reserva | Resolver a solicitação, encerrando-a ou iniciando o agendamento |
+| Locador | Reportar o locatário que tenha descumprido os acordos da reserva ou do condomínio diretamente ao administrador | Ter o caso mediado e resolvido rapidamente |
+| Locador | Avaliar o locatário ao fim do período de reserva | Compartilhar a experiência e ajudar na tomada de decisão dos demais usuários e incentivar o bom uso da plataforma |
+| Locatário | Criar um perfil e cadastrar minhas informações de contato e do meu apartamento | Poder ser identificado e ingressar em um condomínio |
+| Locatário | Buscar vagas disponíveis no condomínio e visualizar os detalhes sobre a disponibilidade, valor, formas de pagamento, localização, bem como sobre o proprietário e suas avaliações | Escolher a melhor opção com base em minhas necessidades |
+| Locatário | Fazer perguntas sobre uma vaga antes de solicitar a reserva | Poder tirar dúvidas sobre algum detalhe ou condição e agilizar o processo de reserva |
+| Locatário | Informar as condições e solicitar a reserva de uma vaga | Notificar o locador sobre meu interesse |
+| Locatário | Poder receber mensagem do locador a quem fiz a solicitação | Confirmar dados e fazer ajustes antes de resolver a solicitação |
+| Locatário | Ser notificado quando uma solicitação for resolvida | Poder saber se foi aceita ou rejeitada |
+| Locatário | Reportar o Locador que tenha descumprido os acordos da reserva ou do condomínio diretamente ao administrador | Ter o caso mediado e resolvido rapidamente |
+| Locatário | Avaliar o Locador ao fim do período de reserva | Compartilhar a experiência e ajudar na tomada de decisão dos demais usuários e incentivar o bom uso da plataforma |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+<!-- Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
 >
@@ -64,7 +72,7 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 > - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
 > - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/) -->
 
 ## Requisitos
 
