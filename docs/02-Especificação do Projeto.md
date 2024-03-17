@@ -104,10 +104,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA |
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA |
+|RNF-001| O aplicativo deve ser MobileFirst para atender principalmente o público que costuma usar o WhatsApp | ALTA |
+|RNF-002| O aplicativo precisa ser responsivo e compatível com variados dispositivos e sistemas operacionais | MÉDIA |
+|RNF-003| A interface do usuário deve ser intuitiva e fácil de usar |  BAIXA |
+|RNF-004| O aplicativo web deve garantir a segurança dos dados dos usuários, utilizando criptografia e práticas de segurança. | ALTA|
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+<!-- Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 - [Requisitos Funcionais
  (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
@@ -120,7 +122,7 @@ Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Cla
   dispositivos iOS e Android).
 Lembre-se que cada requisito deve corresponder à uma e somente uma
 característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+todos os aspectos capturados nas Histórias de Usuário foram cobertos. -->
 
 ## Restrições
 
@@ -133,7 +135,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
+<!-- > **Links Úteis**:
 >
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/) -->
