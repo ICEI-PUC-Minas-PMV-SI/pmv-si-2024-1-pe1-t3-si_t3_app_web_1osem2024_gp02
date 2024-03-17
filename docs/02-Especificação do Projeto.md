@@ -8,11 +8,26 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+### 1 - Pessoa administradora
+
+Joana tem 48 anos, é dona de casa, síndica do condomínio onde mora. Por ser a ponte entre os moradores e a administração do local, ela também administra o grupo de vagas no WhatsApp, um espaço virtual por onde os moradores organizam o empréstimo e aluguel de suas vagas de garagem. No entanto, o fluxo de mensagens a frequência de pequenos conflitos relacionados à dinâmica de empréstimos são altos.\
+Joana se esforça para manter a ordem e resolver questões rapidamente, mas a natureza caótica das conversas em grupo muitas vezes dificulta a localização de informações específicas.
+
+### 2 - Pessoa locadora
+
+Daniela é uma profissional de 30 anos que trabalha em tempo integral e almoça fora para otimizar seu tempo. Daniela transformou sua vaga de garagem ociosa em uma oportunidade de renda extra. Através do grupo de WhatsApp ela anuncia a disponibilidade da vaga, e costuma alugá-la por horas ou dias, o que lhe permite uma fonte adicional de renda para ajudar no custeio do combustível do seu carro.\
+Apesar de apreciar a visibilidade que o grupo dá a sua oferta, Daniela enfrentou desafios com a plataforma. Durante uma negociação anterior, um mal-entendido expôs falhas na organização do grupo, resultando em dificuldades para obter informações e assistência. Desde então Daniela se sente mais receosa em relação ao uso do grupo, buscando um equilíbrio entre a exposição e a segurança nas transações.
+
+### 3 - Pessoa locatária
+
+José tem 40 anos e equilibra sua vida profissional e familiar em casa. Como desenvolvedor de software, ele tem a flexibilidade de trabalhar remotamente, e gosta de receber amigos e família para almoços e jantares sempre que possível. A única vaga de garagem de José é normalmente ocupada pelo carro da família, e para acomodar seus convidados ele recorre ao grupo de vagas do Whatsapp. Embora ele geralmente tenha sucesso em garantir um espaço, o processo pode ser estressante devido ao grande número de mensagens e negociações simultâneas no grupo.
+
+<!-- Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
 > **Links Úteis**:
+>
 > - [Rock Content](https://rockcontent.com/blog/personas/)
 > - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 > - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
@@ -20,7 +35,7 @@ Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos 
 > - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
 > - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
 >
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja. -->
 
 ## Histórias de Usuários
 
@@ -30,10 +45,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
 |Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+| Administrador | Criar um condomínio | Permitir que moradores entrem e participem das negociações |
+| Administrador | Receber alertas sobre solicitações de ajuda | Mediar conflitos |
+| Administrador | Ter acesso aos registros de reservas | Consultar informações de forma eficiente e mediar conflitos |
+| Administrador | Poder remover um usuário que descumpriu os acordos do condomínio | Garantir um ambiente seguro e justo para todos que usam o aplicativo |
+| Locatário |  |  |
+| Locatário |  |  |
+| Locatário |  |  |
+| Locatário |  |  |
+| Locatário |  |  |
+| Locatário |  |  |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
+>
 > - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
 > - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
 > - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
@@ -48,16 +74,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
+|RF-001| Permitir que o usuário cadastre tarefas | ALTA |
 |RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA |
+|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -83,9 +108,9 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
 
-
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
 > **Links Úteis**:
+>
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
 > - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
