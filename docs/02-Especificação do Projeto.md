@@ -82,23 +82,23 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-| RF-001 | Permitir que os usuários se cadastrem e definam seu tipo de perfil |  |
-| RF-002 | Permitir a edição dos dados do perfil |  |
-| RF-003 | Permitir ao usuário administrador criar e gerenciar membros de um condomínio |  |
-| RF-004 | Permitir que o administrador receba reportes de usuários e as informações das reservas a que o incidente diz respeito |  |
-| RF-005 | Permitir que o locatário anuncie sua vaga e informe período, valor e recorrência da disponibilidade| |
-| RF-006 | Exibir a listagem de vagas disponíveis e suas informações relevantes | |
-| RF-007 | Exibir a página de detalhes de cada vaga com informações sobre o proprietário | |
-| RF-008 | Disponibilizar na página de detalhes um espaço para que locatários façam perguntas e locadores as respondam | |
-| RF-009 | Enviar notificações ao locador sobre novas dúvidas e solicitações de reserva de sua vaga |  |
-| RF-010 | Permitir que o locador envie mensagem ao usuário que solicitou a reserva |  |
-| RF-011 | Permitir ao locatário editar ou cancelar a solicitação de reserva |  |
-| RF-012 | Permitir ao locador aceitar ou rejeitar a solicitação |  |
-| RF-013 | Permitir ao locatário informar as condições necessárias solicitar a reserva de uma vaga |  |
+| RF-001 | Permitir que os usuários se cadastrem e definam seu tipo de perfil | ALTA |
+| RF-002 | Permitir a edição dos dados do perfil | BAIXA |
+| RF-003 | Permitir ao usuário administrador criar e gerenciar membros de um condomínio | ALTA |
+| RF-004 | Permitir que o administrador receba reportes de usuários e as informações das reservas a que o incidente diz respeito | MÉDIA |
+| RF-005 | Permitir que o locatário anuncie sua vaga e informe período, valor e recorrência da disponibilidade| ALTA |
+| RF-006 | Exibir a listagem de vagas disponíveis e suas informações relevantes | ALTA |
+| RF-007 | Exibir a página de detalhes de cada vaga com informações sobre o proprietário | MÉDIA |
+| RF-008 | Disponibilizar na página de detalhes um espaço para que locatários façam perguntas e locadores as respondam | BAIXA |
+| RF-009 | Enviar notificações ao locador sobre novas dúvidas e solicitações de reserva de sua vaga | MÉDIA |
+| RF-010 | Permitir que o locador envie mensagem ao usuário que solicitou a reserva | BAIXA |
+| RF-011 | Permitir ao locatário editar ou cancelar a solicitação de reserva | MÉDIA |
+| RF-012 | Permitir ao locador aceitar ou rejeitar a solicitação | ALTA |
+| RF-013 | Permitir ao locatário informar as condições necessárias e solicitar a reserva de uma vaga | ALTA |
 | RF-014 | Enviar notificações ao locatário sobre novas mensagens, respostas à suas dúvidas e status de suas solicitações |  |
-| RF-015 | Exibir ao usuário a listagem de suas reservas ativas e o histórico de suas reservas e seus detalhes |  |
-| RF-016 | Permitir aos usuários locadores e locatários avaliar uns aos outros ao final do período de reserva |  |
-| RF-017 | Permitir aos usuários locadores e locatários reportar uns aos outros em casos mais graves que precisem da mediação do administrador |  |
+| RF-015 | Exibir ao usuário a listagem de suas reservas ativas e o histórico de suas reservas e seus detalhes | MÉDIA |
+| RF-016 | Permitir aos usuários locadores e locatários avaliar uns aos outros ao final do período de reserva | BAIXA |
+| RF-017 | Permitir aos usuários locadores e locatários reportar uns aos outros em casos mais graves que precisem da mediação do administrador | MÉDIA |
 
 ### Requisitos não Funcionais
 
