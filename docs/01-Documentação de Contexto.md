@@ -1,12 +1,13 @@
 # Introdução
 
-Este projeto busca evidenciar quais são os efeitos de um sistema de informação sobre a organização, rastreabilidade e segurança das reservas de vagas de garagem dentro de um condomínio, quando comparado ao método de reservas via WhatsApp, já utilizado por moradores em muitos condomínios do Brasil.
+No Brasil, de acordo com o último Censo Demográfico do IBGE, estima-se que dos 57.324.185 domicílios, 6.157.162 são apartamentos e 1.018.494 casas de vila ou condomínios. O avanço na urbanização e busca por maior segurança e qualidade de vida tem feito com que as pessoas escolham morar em prédios e condomínios. Neste modelo de comunidade, onde cada morador dispõe de um número limitado de vagas de garagem, é comum a prática de compartilhar vagas, uma conveniência que requer coordenação eficaz entre os moradores. Para facilitar essa dinâmica de empréstimo e aluguel, os moradores frequentemente recorrem a canais de comunicação acessíveis, como grupos de WhatsApp.
+Este projeto busca evidenciar quais são os efeitos de um sistema de informação sobre a organização, rastreabilidade e segurança das reservas de vagas de garagem dentro de um condomínio, quando comparado ao método de reservas via WhatsApp.
 
 <!-- --Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto. -->
 
 ## Problema
 
-Nos condomínios, é comum a prática de compartilhar vagas de garagem, uma conveniência que requer coordenação eficaz entre os moradores. Para facilitar essa dinâmica de empréstimo e aluguel, os moradores frequentemente recorrem a canais de comunicação acessíveis, como grupos de WhatsApp. No entanto, esses grupos apresentam várias limitações. A comunicação é frequentemente desorganizada e as informações importantes podem se perder em meio a um alto volume de mensagens. Isso resulta em confusão sobre a disponibilidade das vagas e potenciais conflitos entre os moradores. Além disso, a segurança das informações compartilhadas no grupo do WhatsApp não é garantida, podendo haver exposição de dados pessoais.
+Os grupos de WhatsApp com a finalidade de compartilhamento de estacionamento ou garagem apresentam limitações. A comunicação é frequentemente desorganizada e as informações importantes podem se perder em meio a um alto volume de mensagens. Isso resulta em confusão sobre a disponibilidade das vagas e potenciais conflitos entre os moradores. Além disso, a segurança das informações compartilhadas no grupo do WhatsApp não é garantida, podendo haver exposição de dados pessoais.
 
 <!-- 
 --Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
