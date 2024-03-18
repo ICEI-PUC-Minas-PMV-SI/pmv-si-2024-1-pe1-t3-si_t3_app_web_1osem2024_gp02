@@ -2,9 +2,11 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+Os moradores de condomínio que compartilham vagas com seus vizinhos enfrentam problemas relacionados à centralização ineficiente das informações o que leva a uma comunicação fragmentada e a um processo de reserva desordenado. Os canais de conversa também tem a rastreabilidade comprometida pois a ausência de um sistema estruturado impede o acompanhamento adequado das reservas, criando confusão sobre a ocupação das vagas. Além disso, o compartilhamento de dados em um grupo aberto do WhatsApp coloca em risco a privacidade dos moradores.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+<!-- Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+
+Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto -->
 
 ## Personas
 
