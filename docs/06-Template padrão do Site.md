@@ -6,6 +6,16 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 
 [Guia de estilo do projeto] (https://www.figma.com/file/TDeLHnFK3dsSszRds17AxS/Vaga-Livre?type=design&node-id=0%3A1&mode=design&t=HDIzLQUmluNfMbJq-1)
 
+## Templates
+
+![template](img/templates/WhatsApp%20Image%202024-04-07%20at%2022.43.35.jpeg)
+![template](img/templates/WhatsApp%20Image%202024-04-07%20at%2022.43.36%20(1).jpeg)
+![template](img/templates/WhatsApp%20Image%202024-04-07%20at%2022.43.36%20(2).jpeg)
+![template](img/templates/WhatsApp%20Image%202024-04-07%20at%2022.43.36%20(3).jpeg)
+![template](img/templates/WhatsApp%20Image%202024-04-07%20at%2022.43.36.jpeg)
+![template](img/templates/WhatsApp%20Image%202024-04-07%20at%2022.43.37.jpeg)
+
+
 > **Links Úteis**:
 >
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
