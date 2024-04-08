@@ -4,7 +4,8 @@
 
 Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-[Guia de estilo do projeto] (https://www.figma.com/file/TDeLHnFK3dsSszRds17AxS/Vaga-Livre?type=design&node-id=0%3A1&mode=design&t=HDIzLQUmluNfMbJq-1)
+
+### [Guia de estilo do projeto](https://www.figma.com/file/TDeLHnFK3dsSszRds17AxS/Vaga-Livre?type=design&node-id=0%3A1&mode=design&t=HDIzLQUmluNfMbJq-1)
 
 ## Templates
 
