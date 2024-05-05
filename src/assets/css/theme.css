@@ -97,7 +97,7 @@ label {
     color: #4F4F4F;
 }
 
-input, textarea {
+input, textarea, select {
     border: 1px solid #BDBDBD;
     color: #4F4F4F;
     padding: 16px 24px;
