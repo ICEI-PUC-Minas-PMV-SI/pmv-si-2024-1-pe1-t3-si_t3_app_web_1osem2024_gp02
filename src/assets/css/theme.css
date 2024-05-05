@@ -15,10 +15,40 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 22.4px;
+    background-color: #F9F9F9;
+    color: #4F4F4F !important;
+}
+
+header {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+}
+
+footer {
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+footer a{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+}
+footer a p{
+    margin: 0;
+    padding: 0;
+    color: #4F4F4F;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #0CA789;
+    color: #0CA789 !important;
+    font-weight: 400 !important;
 }
 
 h1 {
@@ -104,3 +134,76 @@ button:hover {
 }
 
 /* end button */
+
+/* card */
+
+.card-default {
+    border: 1px solid #BDBDBD;
+    border-radius: 8px !important;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.card-default .card-body {
+    padding: 23px 23px 12px 23px;
+}
+
+.card-default .card-buttons {
+    border-top: 1px solid #BDBDBD;
+}
+
+.card-default .card-buttons a {
+    padding: 23px 10px;
+    display: inline-block;
+    width: 49% !important;
+    text-align: center;
+}
+
+.card-default .card-buttons a.border-left {
+    border-left: 1px solid #BDBDBD;
+}
+
+.card-link {
+    border: 1px solid #BDBDBD;
+    border-radius: 8px !important;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.card-link a {
+    display: flex;
+    padding: 15px;
+    color: #4F4F4F !important;
+    gap: 20px;
+}
+
+.card-link a p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+/* end card */
+
+/* card */
+
+.badge-primary {
+    background-color: #087560;
+    border-radius: 8px !important;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.badge-secondary {
+    background-color: #4F4F4F;
+    border-radius: 8px !important;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* end card */
+
