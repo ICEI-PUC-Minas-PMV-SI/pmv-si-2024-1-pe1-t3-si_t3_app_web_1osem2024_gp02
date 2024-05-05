@@ -40,7 +40,7 @@
         <div class="d-flex flex-row gap-3">
           <i class="bi bi-calendar-week fs-3 text-success align-middle"></i>
   
-          <p>
+          <p class="m-0">
             <span class="text-muted d-block">Disponibilidade</span>
             <span class="lead d-block">De: xx/xx/xxxx hh:mm</span>
             <span class="lead d-block">Até: xx/xx/xxxx hh:mm</span>
@@ -52,7 +52,7 @@
         <h4>Selecione o período de reserva</h4>
   
         <form class="d-flex flex-column gap-3 px-3">
-          <div id="dateTimePicker">
+          <div id="dateTime" class="d-flex flex-column gap-2">
             <div class="container p-0">
               <div class="row">
                 <p class="text-muted col-1">De:</p>
@@ -95,13 +95,13 @@
             </div>
           </div>
   
-          <p>
+          <p id="totalAmount" class="m-0">
             <span class="text-muted">Total:</span>
             <strong class="lead">R$: 00,00</strong>
           </p>
   
           <div id="paymentMethods">
-            <p class="text-muted">Formas de pagamento:</p>
+            <p class="text-muted m-1">Formas de pagamento:</p>
   
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="checkbox" value="money" id="money">
