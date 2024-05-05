@@ -185,7 +185,7 @@ button:hover {
 
 /* end card */
 
-/* card */
+/* badge */
 
 .badge-primary {
     background-color: #087560;
@@ -205,5 +205,14 @@ button:hover {
     color: #FFFFFF;
 }
 
-/* end card */
+.badge-waiting {
+    background-color: #E2B93B;
+    border-radius: 8px !important;
+    padding: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+/* end badge */
 
