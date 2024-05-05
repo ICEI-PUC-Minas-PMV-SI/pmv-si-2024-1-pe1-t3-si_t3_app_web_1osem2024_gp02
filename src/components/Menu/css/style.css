@@ -2,8 +2,8 @@ Footer {
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: white;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
   bottom: 0;
   left: 0;
   width: 100%;
@@ -16,6 +16,5 @@ Footer {
   border: none;
   outline: none;
   background-color: transparent;
-  font-family: Andale Mono;
   padding-left: 15px;
 }
