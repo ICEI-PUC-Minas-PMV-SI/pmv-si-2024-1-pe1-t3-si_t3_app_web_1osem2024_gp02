@@ -1,5 +1,3 @@
-@import "../../../components/Menu/css/style.css";
-
 body {
   display: flex;
   flex-direction: column;
@@ -10,12 +8,34 @@ div {
   margin-bottom: 20px;
 }
 
+Footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
 .texts {
   font-weight: bold;
 }
 
 .container {
   margin-top: 40px;
+}
+
+.buttonIcon {
+  display: flex;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: Andale Mono;
+  padding-left: 15px;
 }
 
 .notificationCard {
