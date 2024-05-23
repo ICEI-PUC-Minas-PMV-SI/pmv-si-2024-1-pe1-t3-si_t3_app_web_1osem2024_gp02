@@ -22,9 +22,9 @@
                 <label class="form-label texts">Condomínio</label>
                 <select class="form-select border-black border-opacity-50 input" id="floatingSelectGrid">
                     <option disabled selected>Selecione</option>
-                    <option value="1">Primeiro</option>
-                    <option value="2">Segundo</option>
-                    <option value="3">Terceiro</option>
+                    <option value="Portal recanto das margaridas">Portal recanto das margaridas</option>
+                    <option value="Edifício Juca Lopes">Edifício Juca Lopes</option>
+                    <option value="Jardim da Colina">Jardim da Colina</option>
                 </select>
             </div>
             <div class="mb-3 divForm">
@@ -41,24 +41,42 @@
                 <label class="form-label texts">Tipo de negociação</label>
                 <select class="form-select border-black border-opacity-50 input" id="floatingSelectGrid">
                     <option disabled selected>Selecione</option>
-                    <option value="1">Primeiro</option>
-                    <option value="2">Segundo</option>
-                    <option value="3">Terceiro</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Segundo">Cartão</option>
+                    <option value="Pix">Pix</option>
                 </select>
             </div>
-            <div class="mb-3 divForm">
-                <label class="form-label texts">Disponibilidade</label>
-                <input type="datetime-local" class="form-control border-black border-opacity-50 input">
+            <div class="mb-3 divForm divDate">
+                <div class="marginLeftNone inputDate">
+                    <label for="min-date" class="form-label texts">Data de início</label>
+                    <input id="min-date" type="date" class="form-control border-black border-opacity-50 input">
+                </div>
+
+                <div class="marginLeftNone marginRightNone inputDate">
+                    <label for="min-time" class="form-label texts">Hora de início</label>
+                    <input id="min-time" type="time" class="form-control border-black border-opacity-50 input">
+                </div>
             </div>
-            <div class="mb-3 divForm">
-                <label class="form-label texts">Termino da disponibilidade</label>
-                <input type="datetime-local" class="form-control border-black border-opacity-50 input">
+            <div class="mb-3 divForm divDate">
+                <div class="marginLeftNone inputDate">
+                    <label for="min-date" class="form-label texts">Data de Término</label>
+                    <input id="min-date" type="date" class="form-control border-black border-opacity-50 input">
+                </div>
+
+                <div class="marginLeftNone marginRightNone inputDate">
+                    <label for="min-time" class="form-label texts">Hora de Término</label>
+                    <input id="min-time" type="time" class="form-control border-black border-opacity-50 input">
+                </div>
             </div>
             <div class="mb-3 divForm">
                 <label class="form-label texts">Valor</label>
-                <input class="form-control border-black border-opacity-50 input" oninput="formatNumber(event)"
-                    placeholder="Informe o preço da vaga">
+                <div class="input-group mb-3 marginLeftNone">
+                    <span class="input-group-text border-black border-opacity-50 input">R$</span>
+                    <input type="text" id="valor" class="form-control border-black border-opacity-50 input inputPrice"
+                        onkeyup="formatCoin(this)" placeholder="Informe o preço da vaga">
+                </div>
             </div>
+
             <div class="mt-5">
                 <button type="submit" class="btn btn-success">Publicar vaga</button>
             </div>

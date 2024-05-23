@@ -38,3 +38,26 @@ textarea {
 .btn {
   width: 100%;
 }
+
+.marginLeftNone {
+  margin-left: 0px;
+}
+
+.marginRightNone {
+  margin-right: 0px;
+}
+
+.inputPrice {
+  text-align: end;
+  padding-left: 50px;
+}
+
+.divDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputDate {
+  width: 50%;
+}
