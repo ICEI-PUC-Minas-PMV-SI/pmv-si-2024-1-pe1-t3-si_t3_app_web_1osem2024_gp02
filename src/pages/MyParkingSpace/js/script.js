@@ -1,7 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
+import teste from ''
+
+let user;
+
+export default document.addEventListener('DOMContentLoaded', function () {
     
     if (JSON.parse(localStorage.getItem("Logado"))) {
-        const user = JSON.parse(localStorage.getItem("Logado"))
+        user = JSON.parse(localStorage.getItem("Logado"))
     } else {
         window.location.href = '../Home/login.html'
     }
@@ -11,15 +15,17 @@ document.addEventListener('DOMContentLoaded', function () {
 const form = document.getElementById('form');
 
 form.addEventListener('submit', e => {
-
+    
     e.preventDefault();
 
     const data = JSON.parse(localStorage.getItem("Vagas"))
         ? JSON.parse(localStorage.getItem("Vagas"))
         : [];
+    
+    const index = data.length > 0 ? data.length - 1 : 0;
 
     data.push({
-        id: 1,
+        id: index,
         userId: user.id,
         condominium: form[0].value,
         parkingSpace: form[1].value,
