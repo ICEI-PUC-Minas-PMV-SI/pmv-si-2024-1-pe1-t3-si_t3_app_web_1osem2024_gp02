@@ -10,27 +10,34 @@ let vagas = JSON.parse(localStorage.getItem("Vagas"))
     ? JSON.parse(localStorage.getItem("Vagas"))
     : [];
 
-if (id) {
+document.addEventListener('DOMContentLoaded', function () { 
 
-    vaga = vagas.find(vaga => {
-        return vaga.id == id
-    })
-
-    if (vaga) {
-        form[0].value = vaga.condominium;
-        form[1].value = vaga.parkingSpace;
-        form[2].value = vaga.description;
-        form[3].value = vaga.negotiation;
-        form[4].value = vaga.startDate;
-        form[5].value = vaga.startTime;
-        form[6].value = vaga.endDate;
-        form[7].value = vaga.endTime;
-        form[8].value = vaga.amount;
-    } else {
-        window.location.href = '../NotFound/index.html'
+    if (id) {
+    
+        vaga = vagas.find(vaga => {
+            return vaga.id == id
+        })
+    
+        if (vaga && vaga.userId == user.id) {
+            form[0].value = vaga.condominium;
+            form[1].value = vaga.parkingSpace;
+            form[2].value = vaga.description;
+            form[3].value = vaga.negotiation;
+            form[4].value = vaga.startDate;
+            form[5].value = vaga.startTime;
+            form[6].value = vaga.endDate;
+            form[7].value = vaga.endTime;
+            form[8].value = vaga.amount;
+        } else if (vaga) {
+            window.location.href = '../Forbidden/index.html'
+        } else {
+            window.location.href = '../NotFound/index.html'
+        }
+    
     }
+    
+})
 
-}
 form.addEventListener('submit', e => {
     e.preventDefault();
 
