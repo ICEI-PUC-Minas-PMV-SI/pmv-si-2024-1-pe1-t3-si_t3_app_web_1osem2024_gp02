@@ -1,4 +1,4 @@
-import TestePrimario from '../../../utilitarios/index'
+// import TestePrimario from '../../../utilitarios/index'
 
 let user;
 

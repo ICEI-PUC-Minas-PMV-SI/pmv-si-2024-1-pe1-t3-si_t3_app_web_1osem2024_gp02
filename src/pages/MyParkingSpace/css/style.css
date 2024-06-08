@@ -1,12 +1,6 @@
+@import "../../../assets/css/theme.css";
 @import "../../../components/Menu/css/style.css";
 @import "../../../components/logo/css/style.css";
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding-bottom: 50px;
-}
 
 div {
   margin: 10px;
@@ -61,8 +55,4 @@ textarea {
 
 .inputDate {
   width: 50%;
-}
-
-.input-group span {
- margin-top: 8px;
 }

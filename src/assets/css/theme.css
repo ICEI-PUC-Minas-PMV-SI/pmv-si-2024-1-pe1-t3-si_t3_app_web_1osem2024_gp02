@@ -19,33 +19,6 @@ body {
     color: #4F4F4F !important;
 }
 
-header {
-    background-color: #FFFFFF;
-    position: fixed;
-    width: 100%;
-}
-
-footer {
-    background-color: #FFFFFF;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-footer a{
-    display: block;
-    text-align: center;
-    justify-content: center;
-    font-weight: 400;
-}
-footer a p{
-    margin: 0;
-    padding: 0;
-    color: #4F4F4F;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: #0CA789 !important;
     font-weight: 400 !important;
@@ -216,3 +189,9 @@ button:hover {
 
 /* end badge */
 
+/* menu */
+#fixedMenu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

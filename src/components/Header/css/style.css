@@ -1,0 +1,7 @@
+@import "../../../assets/css/theme.css";
+
+header {
+  background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+}
