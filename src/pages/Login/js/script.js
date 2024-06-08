@@ -9,7 +9,7 @@ form.addEventListener('submit', e => {
     data.map(val => {
         if (val.email === form[0].value && val.senha === criptografarSenha(form[1].value)) {
             const { email, nome } = val
-            const dataArray = JSON.stringify({ email, nome });
+            const dataArray = JSON.stringify({ id, email, nome });
             localStorage.setItem("Logado", dataArray);
             alert("Login feito com sucesso.");
             window.location.href = '../Home/home.html';

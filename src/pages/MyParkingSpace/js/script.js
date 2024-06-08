@@ -20,7 +20,7 @@ form.addEventListener('submit', e => {
 
     data.push({
         id: 1,
-        user: form[0].value,
+        userId: user.id,
         condominium: form[0].value,
         parkingSpace: form[1].value,
         description: form[2].value,
