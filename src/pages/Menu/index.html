@@ -11,8 +11,10 @@
 </head>
 
 <body>
-    <iframe src="../../components/logo/index.html" frameborder="0"
-        style="position: absolute; display: flex; align-items: center; justify-content: center; background-color: white; top: 15px; left: 0; width: 100%; height: 60px; z-index: -1;"></iframe>
+    
+    <header id="header"></header>
+    <nav id="menu"></nav>
+    
     <div class="container">
         <h1>
             Menu
@@ -25,13 +27,13 @@
                 </svg>
                 Meu Perfil
             </button>
-            <button class="button">
+            <button onclick="route('minhas-vagas')" class="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-wrench"
                     viewBox="0 0 16 16">
                     <path
                         d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11z" />
                 </svg>
-                Gerenciar minhas vagas
+                Gerenciar Minhas Vagas
             </button>
             <button class="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -53,9 +55,9 @@
             </button>
         </div>
     </div>
-    <iframe class="menu" src="../../components/Menu/index.html" frameborder="0"
-        style="position: fixed; display: flex; align-items: center; justify-content: center; background-color: white; bottom: 0; left: 0; width: 100%; height: 60px;"></iframe>
-</body>
-<script src="./js/script.js"></script>
+    
+    <script src="../../utilitarios/index.js"></script>
+    <script src="./js/script.js"></script>
 
+</body>
 </html>

@@ -1,11 +1,14 @@
-@import "../../../components/Menu/css/style.css";
+/* tema */
+@import "../../../assets/css/theme.css";
 
-body {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  padding-bottom: 90px;
-}
+/* header */
+@import url('../../../components/Header/css/style.css');
+
+/* menu */
+@import url('../../../components/Menu/css/style.css');
+
+/* card */
+@import url('../../../components/CardVaga/css/style.css');
 
 p {
   margin: 0 !important;

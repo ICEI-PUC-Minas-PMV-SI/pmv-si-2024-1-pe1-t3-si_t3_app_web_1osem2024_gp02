@@ -58,6 +58,10 @@ function route(key, id = null) {
             href: '../Search/index.html'
         },
         {
+            key: 'minhas-vagas',
+            href: '../Proposal/index.html'
+        },
+        {
             key: 'vaga',
             href: '../MyParkingSpace/index.html'
         }
