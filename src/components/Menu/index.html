@@ -1,83 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaga livre</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-
-<body>
-    <nav class="fixed-menu">
-        <button href="./home.html" class="align-items-center">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2_2408)">
-                    <path
-                        d="M18.3571 9.92288C18.3584 9.74443 18.3224 9.56767 18.2516 9.40387C18.1807 9.24007 18.0766 9.0928 17.9457 8.97145L10 1.64288L2.05431 8.97145C1.92346 9.0928 1.8193 9.24007 1.74847 9.40387C1.67763 9.56767 1.64167 9.74443 1.64288 9.92288V17.0715C1.64288 17.4124 1.77834 17.7395 2.01946 17.9806C2.26058 18.2217 2.58761 18.3572 2.92859 18.3572H17.0714C17.4124 18.3572 17.7395 18.2217 17.9806 17.9806C18.2218 17.7395 18.3571 17.4124 18.3571 17.0715V9.92288Z"
-                        stroke="#0CA789" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M10 18.3572V13.2143" stroke="#0CA789" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_2_2408">
-                        <rect width="20" height="20" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <p>Home</p>
-        </button>
-        <button href="" class="align-items-center">
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M15.3214 8.07146C17.0966 8.07146 18.5357 6.63237 18.5357 4.85717C18.5357 3.08197 17.0966 1.64288 15.3214 1.64288C13.5462 1.64288 12.1071 3.08197 12.1071 4.85717C12.1071 6.63237 13.5462 8.07146 15.3214 8.07146Z"
-                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M14.2705 11.2858V13.2575C14.2705 13.7604 14.4703 14.2426 14.8259 14.5983C15.1814 14.9538 15.7829 15.1536 16.2857 15.1536H2.14285C2.64573 15.1536 3.24713 14.9538 3.60272 14.5983C3.95829 14.2426 4.15807 13.7604 4.15807 13.2575L4.15806 8.6277C4.15806 7.28671 4.69077 6.00064 5.63899 5.05241C6.58722 4.10418 7.87329 3.57147 9.21428 3.57147"
-                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M7.92856 18.3572H10.5" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-            <p>Notificações</p>
-        </button>
-        <button href="" class="align-items-center">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_2_2442)">
-                    <path
-                        d="M12.8929 7.42859C14.3421 7.42859 15.732 8.00429 16.7567 9.02905C17.7814 10.0538 18.3572 11.4437 18.3572 12.8929C18.3606 13.9685 18.0427 15.0206 17.4443 15.9143L18.3572 18.3572L15.2843 17.8043C14.5453 18.1647 13.7345 18.3537 12.9123 18.3572C12.0902 18.3606 11.2778 18.1784 10.5358 17.8244C9.79375 17.4703 9.14121 16.9532 8.62677 16.3118C8.11233 15.6705 7.74924 14.9213 7.56459 14.1201C7.37993 13.3189 7.37844 12.4864 7.56026 11.6846C7.74207 10.8827 8.10248 10.1323 8.61463 9.48908C9.12678 8.84588 9.77748 8.32657 10.5182 7.96981C11.259 7.61305 12.0707 7.42805 12.8929 7.42859Z"
-                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                        d="M13.6772 4.22719C12.8114 3.12542 11.6235 2.32105 10.2791 1.92607C8.93461 1.53109 7.50044 1.56516 6.17626 2.02353C4.85208 2.48191 3.70378 3.34177 2.89122 4.4834C2.07867 5.62503 1.64232 6.99163 1.64291 8.3929C1.63893 9.7249 2.03291 11.0277 2.77434 12.1343L1.64291 15.1428L4.36862 14.6543"
-                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_2_2442">
-                        <rect width="20" height="20" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-            <p>Mensagens</p>
-        </button>
-        <button href="" class="align-items-center">
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M5.6786 8.71431C7.63131 8.71431 9.21431 7.13131 9.21431 5.1786C9.21431 3.22588 7.63131 1.64288 5.6786 1.64288C3.72588 1.64288 2.14288 3.22588 2.14288 5.1786C2.14288 7.13131 3.72588 8.71431 5.6786 8.71431Z"
-                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M15.3215 8.71431C17.2742 8.71431 18.8572 7.13131 18.8572 5.1786C18.8572 3.22588 17.2742 1.64288 15.3215 1.64288C13.3688 1.64288 11.7858 3.22588 11.7858 5.1786C11.7858 7.13131 13.3688 8.71431 15.3215 8.71431Z"
-                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M5.6786 18.3572C7.63131 18.3572 9.21431 16.7742 9.21431 14.8215C9.21431 12.8688 7.63131 11.2858 5.6786 11.2858C3.72588 11.2858 2.14288 12.8688 2.14288 14.8215C2.14288 16.7742 3.72588 18.3572 5.6786 18.3572Z"
-                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                    d="M15.3215 18.3572C17.2742 18.3572 18.8572 16.7742 18.8572 14.8215C18.8572 12.8688 17.2742 11.2858 15.3215 11.2858C13.3688 11.2858 11.7858 12.8688 11.7858 14.8215C11.7858 16.7742 13.3688 18.3572 15.3215 18.3572Z"
-                    stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-            <p>Menu</p>
-        </button>
-    </nav>
-</body>
-
-</html>
+<div>
+    <button onclick="route('home')" class="align-items-center">
+        <img src="../../assets/icons/home.svg" alt="">
+        <p>Home</p>
+    </button>
+    <button onclick="route('notificacoes')" class="align-items-center">
+        <img src="../../assets/icons/notificacoes.svg" alt="">
+        <p>Notificações</p>
+    </button>
+    <button onclick="route('mensagens')" class="align-items-center">
+        <img src="../../assets/icons/mensagens.svg" alt="">
+        <p>Mensagens</p>
+    </button>
+    <button onclick="route('menu')" class="align-items-center">
+        <img src="../../assets/icons/menu.svg" alt="">
+        <p>Menu</p>
+    </button>
+</div>

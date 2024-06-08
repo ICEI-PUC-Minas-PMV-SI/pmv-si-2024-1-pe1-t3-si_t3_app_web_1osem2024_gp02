@@ -1,15 +1,6 @@
 body {
-  
     height: 100%;
-    padding-bottom: 50px;
-
-}
-
-/* fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-
-body {
+    padding: 90px 0px 156px 0px;
     font-family: "Archivo", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -18,6 +9,9 @@ body {
     background-color: #F9F9F9;
     color: #4F4F4F !important;
 }
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
     color: #0CA789 !important;
@@ -188,10 +182,3 @@ button:hover {
 }
 
 /* end badge */
-
-/* menu */
-#fixedMenu {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}

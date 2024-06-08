@@ -1,6 +1,11 @@
+/* tema */
 @import "../../../assets/css/theme.css";
-@import "../../../components/Menu/css/style.css";
-@import "../../../components/logo/css/style.css";
+
+/* header */
+@import url('../../../components/Header/css/style.css');
+
+/* menu */
+@import url('../../../components/Menu/css/style.css');
 
 div {
   margin: 10px;

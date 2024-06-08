@@ -1,7 +1,6 @@
-@import "../../../assets/css/theme.css";
-
-header {
+#header {
   background-color: #FFFFFF;
   position: fixed;
+  top: 0;
   width: 100%;
 }
