@@ -1,0 +1,7 @@
+@import "../../../components/Menu/css/style.css";
+@import "../../../components/logo/css/style.css";
+
+.container {
+  background-color: brown;
+  margin: 40px;
+}

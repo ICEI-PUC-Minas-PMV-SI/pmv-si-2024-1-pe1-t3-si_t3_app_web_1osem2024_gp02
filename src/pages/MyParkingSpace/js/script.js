@@ -15,7 +15,7 @@ form.addEventListener('submit', e => {
         }
     ]
     const dataArray = JSON.stringify(data);
-    localStorage.setItem("teste", dataArray);
+    localStorage.setItem("Vagas", dataArray);
     form[0].value = '';
     form[1].value = '';
     form[2].value = '';
