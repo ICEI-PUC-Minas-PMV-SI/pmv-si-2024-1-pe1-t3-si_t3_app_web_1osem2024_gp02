@@ -1,4 +1,5 @@
-@import "../../Home/css/style.css";
+@import "../../../components/Menu/css/style.css";
+@import "../../../components/logo/css/style.css";
 
 body {
   display: flex;

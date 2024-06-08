@@ -1,20 +1,12 @@
-import teste from ''
+import TestePrimario from '../../../utilitarios/index'
 
 let user;
-
-export default document.addEventListener('DOMContentLoaded', function () {
-    
-    if (JSON.parse(localStorage.getItem("Logado"))) {
-        user = JSON.parse(localStorage.getItem("Logado"))
-    } else {
-        window.location.href = '../Home/login.html'
-    }
-    
-})
 
 const form = document.getElementById('form');
 
 form.addEventListener('submit', e => {
+
+    TestePrimario()
     
     e.preventDefault();
 
