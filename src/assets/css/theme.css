@@ -143,19 +143,6 @@ button:hover {
     margin-bottom: 24px !important;
 }
 
-.card-link a {
-    display: flex;
-    padding: 15px;
-    color: #4F4F4F !important;
-    gap: 20px;
-}
-
-.card-link a p {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-}
-
 /* end card */
 
 /* badge */

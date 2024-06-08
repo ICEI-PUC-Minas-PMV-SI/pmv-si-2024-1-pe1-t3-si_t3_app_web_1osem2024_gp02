@@ -6,3 +6,19 @@
 
 /* menu */
 @import url('../../../components/Menu/css/style.css');
+
+.card-link button {
+    background: none;
+    margin: 0 !important;
+    display: flex;
+    padding: 15px !important;
+    color: #4F4F4F !important;
+    gap: 20px;
+}
+
+.card-link button p {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-align: left;
+}

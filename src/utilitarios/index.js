@@ -28,7 +28,7 @@ function route(key) {
     const pages = [
         {
             key: 'home',
-            href: '../Home/home.html'
+            href: '../Home/index.html'
         },
         {
             key: 'notificacoes',
@@ -45,6 +45,10 @@ function route(key) {
         {
             key: 'nova-vaga',
             href: '../MyParkingSpace/index.html'
+        },
+        {
+            key: 'buscar-vagas',
+            href: '../Search/index.html'
         }
     ]
     
