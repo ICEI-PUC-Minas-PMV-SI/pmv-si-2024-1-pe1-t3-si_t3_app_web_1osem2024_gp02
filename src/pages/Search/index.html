@@ -9,16 +9,17 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
-  <body class="bg-light">
-    <header class="d-flex align-items-center fixed-top bg-white shadow-sm">
-      <button type="button" class="btn btn-light bg-white">
-        <i class="bi bi-arrow-left fs-1"></i>
-      </button>
-    
-      <h1 class="m-0 ms-2">Buscar vagas</h1>
-    </header>
+  <body>
 
-    <main class="container my-5 py-5">
+    <header id="header"></header>
+    <nav id="menu"></nav>
+      
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h1 id="titulo">Buscar vagas</h1>
+        </div>
+      </div>
       <search class="accordion shadow-sm" id="filtersAccordion">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -137,63 +138,13 @@
       </search>
 
       <!-- Lista de vagas -->
-      <ul class="p-0 container">
-        <li class="card shadow-sm my-3">
-          <div class="card-body px-4">
-            <h3 class="card-title">Vaga 38</h3>
-    
-            <p id="user-name" class="card-subtitle text-muted">Fulano de tal</p>
-      
-            <div id="availability" class="d-flex align-items-center my-2">
-              <i class="bi bi-calendar-week text-success fs-1"></i>
+      <div class="row">
+        <div class="col-md-12" id="vagas"></div>
+      </div>
+    </div>
 
-              <p class="card-text ms-3">
-                <div id="min-datetime">
-                  <span class="text-success">De:</span>
-                  <span>xx/xx/xxx hh:mm</span>
-                </div>
-            
-                <div id="max-datetime" class="ms-3">
-                  <span class="text-success">Até:</span>
-                  <span>xx/xx/xxx hh:mm</span>
-                </div>
-              </p>
-            </div>
-  
-            <div id="paymment" class="d-flex align-items-center">
-              <i class="bi bi-currency-dollar text-success fs-1"></i>
-                
-              <p class="card-text ms-3">
-                <div id="price">
-                  <span class="text-success">Valor:</span>
-                  <span class="text-nowrap">R$ xx,xx/hora</span>
-                </div>
-
-                <div id="method" class="ms-3">
-                  <span class="text-success">Aceita:</span>
-                  <span>Dinheiro, Pix</span>
-                </div>
-              </p>
-            </div>
-          </div>
-    
-          <div class="card-footer d-grid">
-            <button type="button" class="btn text-success">
-              <span class="bi bi-plus-lg text-center fs-4 align-middle"></span>
-              <span class="text-center align-middle">Ver detalhes</span>
-            </button>
-          </div>
-        </li>
-      </ul>
-    </main>
-
+    <script src="../../utilitarios/index.js"></script>
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <iframe
-    class="fixed-menu shadow"
-    src="../../components/Menu/index.html"
-    frameborder="0"
-/>
   </body>
 </html>

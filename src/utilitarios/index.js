@@ -12,10 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
-function loadComponent(elementId, componentUrl) {
+function loadComponent(elementId, componentUrl, props = {}) {
     fetch(componentUrl)
         .then(response => response.text())
         .then(data => {
+
+            // Substituir placeholders pelos valores dos parâmetros
+            Object.keys(props).forEach(key => {
+                const placeholder = `{{${key}}}`;
+                data = data.split(placeholder).join(props[key]);
+            });
+
             document.getElementById(elementId).innerHTML = data;
         })
         .catch(error => {
@@ -23,7 +30,7 @@ function loadComponent(elementId, componentUrl) {
         });
 }
 
-function route(key) {
+function route(key, id = null) {
 
     const pages = [
         {
@@ -49,6 +56,10 @@ function route(key) {
         {
             key: 'buscar-vagas',
             href: '../Search/index.html'
+        },
+        {
+            key: 'vaga',
+            href: '../MyParkingSpace/index.html'
         }
     ]
     
@@ -56,7 +67,12 @@ function route(key) {
         return page.key === key
     })
 
-    if (page) window.location.href = page.href 
+    if (page) {
+        
+        page.href = id ? page.href + '?id=' + id : page.href
+        window.location.href = page.href
+
+    }
     else window.location.href = '../NotFound/index.html'
 
 }

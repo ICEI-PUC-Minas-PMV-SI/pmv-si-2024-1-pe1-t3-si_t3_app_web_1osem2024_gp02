@@ -1,1 +1,11 @@
-@import "../../../components/Menu/css/style.css";
+/* tema */
+@import "../../../assets/css/theme.css";
+
+/* header */
+@import url('../../../components/Header/css/style.css');
+
+/* menu */
+@import url('../../../components/Menu/css/style.css');
+
+/* card */
+@import url('../../../components/CardVaga/css/style.css');
