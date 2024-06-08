@@ -10,6 +10,12 @@ body {
     color: #4F4F4F !important;
 }
 
+/* container */
+.container {
+ padding: 0px 30px !important;   
+}
+/* end container */
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 

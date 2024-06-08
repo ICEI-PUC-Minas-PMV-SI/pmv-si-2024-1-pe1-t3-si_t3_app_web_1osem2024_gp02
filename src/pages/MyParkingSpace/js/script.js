@@ -7,10 +7,8 @@ form.addEventListener('submit', e => {
         ? JSON.parse(localStorage.getItem("Vagas"))
         : [];
     
-    const index = data.length > 0 ? data.length - 1 : 0;
-
     data.push({
-        id: index,
+        id: data.length + 1,
         userId: user.id,
         condominium: form[0].value,
         parkingSpace: form[1].value,

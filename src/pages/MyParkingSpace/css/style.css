@@ -7,10 +7,6 @@
 /* menu */
 @import url('../../../components/Menu/css/style.css');
 
-div {
-  margin: 10px;
-}
-
 form {
   margin-top: 40px;
 }
@@ -56,6 +52,11 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
+}
+
+.divPreco span {
+  margin-top: 8px;
 }
 
 .inputDate {
