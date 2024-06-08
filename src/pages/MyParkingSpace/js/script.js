@@ -1,21 +1,38 @@
+document.addEventListener('DOMContentLoaded', function () {
+    
+    if (JSON.parse(localStorage.getItem("Logado"))) {
+        const user = JSON.parse(localStorage.getItem("Logado"))
+    } else {
+        window.location.href = '../Home/login.html'
+    }
+    
+})
+
 const form = document.getElementById('form');
 
 form.addEventListener('submit', e => {
+
     e.preventDefault();
-    const data = [
-        {
-            id: 1,
-            condominium: form[0].value,
-            parkingSpace: form[1].value,
-            description: form[2].value,
-            negotiation: form[3].value,
-            time: formatDateTime(form[4].value, form[5].value),
-            endTime: formatDateTime(form[6].value, form[7].value),
-            amount: `R$${form[8].value}`
-        }
-    ]
+
+    const data = JSON.parse(localStorage.getItem("Vagas"))
+        ? JSON.parse(localStorage.getItem("Vagas"))
+        : [];
+
+    data.push({
+        id: 1,
+        user: form[0].value,
+        condominium: form[0].value,
+        parkingSpace: form[1].value,
+        description: form[2].value,
+        negotiation: form[3].value,
+        time: formatDateTime(form[4].value, form[5].value),
+        endTime: formatDateTime(form[6].value, form[7].value),
+        amount: `R$${form[8].value}`,
+        status: 'livre'
+    })
+
     const dataArray = JSON.stringify(data);
-    localStorage.setItem("teste", dataArray);
+    localStorage.setItem("Vagas", dataArray);
     form[0].value = '';
     form[1].value = '';
     form[2].value = '';

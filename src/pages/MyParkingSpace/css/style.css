@@ -1,4 +1,4 @@
-@import "../../../components/Menu/css/style.css";
+@import "../../Home/css/style.css";
 
 body {
   display: flex;
@@ -60,4 +60,8 @@ textarea {
 
 .inputDate {
   width: 50%;
+}
+
+.input-group span {
+ margin-top: 8px;
 }

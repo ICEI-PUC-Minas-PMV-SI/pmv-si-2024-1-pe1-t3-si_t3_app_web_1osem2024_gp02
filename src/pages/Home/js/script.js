@@ -1,7 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const data = JSON.parse(localStorage.getItem("Logado"))
-        ? JSON.parse(localStorage.getItem("Logado"))
-        : {nome: 'Fulano'};
+document.addEventListener('DOMContentLoaded', function () {
+    
+    if (JSON.parse(localStorage.getItem("Logado"))) {
 
-    document.getElementById('titulo').innerText = `Olá, ${data.nome}!`
+        const data = JSON.parse(localStorage.getItem("Logado"));
+
+        document.getElementById('titulo').innerText = `Olá, ${data.nome}!`
+        
+    } else {
+        window.location.href = '../Login/index.html'
+    }
+
 })
