@@ -1,13 +1,6 @@
-import TestePrimario from '../../../utilitarios/index'
-
-let user;
-
 const form = document.getElementById('form');
 
 form.addEventListener('submit', e => {
-
-    TestePrimario()
-    
     e.preventDefault();
 
     const data = JSON.parse(localStorage.getItem("Vagas"))
