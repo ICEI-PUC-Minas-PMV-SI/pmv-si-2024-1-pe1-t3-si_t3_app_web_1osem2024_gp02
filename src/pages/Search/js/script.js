@@ -2,11 +2,21 @@ const vagas = JSON.parse(localStorage.getItem("Vagas"))
     ? JSON.parse(localStorage.getItem("Vagas"))
     : [];
 
-vagas.forEach(vaga => {
-    vaga.dateTime = formatDateTime(vaga.startDate, vaga.startTime)
-    vaga.endDateTime = formatDateTime(vaga.endDate, vaga.endTime)
-    loadComponent('vagas', '../../components/CardVaga/index.html', vaga);
-});
+document.addEventListener('DOMContentLoaded', function () {
+
+    vagas.forEach(vaga => {
+
+        if (vaga.userId != user.id) {
+            
+            vaga.dateTime = formatDateTime(vaga.startDate, vaga.startTime)
+            vaga.endDateTime = formatDateTime(vaga.endDate, vaga.endTime)
+            loadComponent('vagas', '../../components/CardVaga/index.html', vaga);
+            
+        }
+
+    });
+
+})
 
 function formatDateTime(data, hora) {
     const partesData = data.split("-");
