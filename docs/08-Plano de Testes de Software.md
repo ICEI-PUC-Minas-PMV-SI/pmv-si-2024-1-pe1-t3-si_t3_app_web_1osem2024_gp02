@@ -90,8 +90,39 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
 | **NOVA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
-| **NOVA-001** | Deve ser possível ver todos os condomínios dos quais o usuário faz parte na listagem | Todos os condomínios válidos listados |
-| **NOVA-001** | Não deve ser possível ver condomínios dos quais o usuário não faz parte na listagem | Condomínios inválidos não são listados |
-| **NOVA-001** | Não deve ser possível criar uma vaga com a data e hora final menor que a inicial | Alerta/Não é possível criar |
-| **NOVA-001** | Não deve ser possível criar uma vaga com dados incompletos | Alerta/Não é possível criar |
-| **NOVA-001** | Deve ser possível criar uma vaga com todos os dados válidos | Vaga publicada |
+| **NOVA-002** | Deve ser possível ver todos os condomínios dos quais o usuário faz parte na listagem | Todos os condomínios válidos listados |
+| **NOVA-003** | Não deve ser possível ver condomínios dos quais o usuário não faz parte na listagem | Condomínios inválidos não são listados |
+| **NOVA-004** | Não deve ser possível criar uma vaga com a data e hora final menor que a inicial | Alerta/Não é possível criar |
+| **NOVA-005** | Não deve ser possível criar uma vaga com dados incompletos | Alerta/Não é possível criar |
+| **NOVA-006** | Deve ser possível criar uma vaga com todos os dados válidos | Vaga publicada |
+
+## 6 - Tela de detalhes da vaga
+
+>RF-007, RF-008, RF-013
+
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
+|---|---|---|
+| **VAGA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **VAGA-002** | Deve ser possível enviar uma dúvida sobre a vaga | Mensagem publicada na página |
+| **VAGA-003** | Deve ser possível ir ao perfil do anunciante ao clicar no link | Redireciona para o perfil |
+| **VAGA-004** | Deve ser possível enviar uma dúvida sobre a vaga | Mensagem publicada na página |
+| **VAGA-005** | Deve ser possível enviar uma dúvida sobre a vaga | Mensagem publicada na página |
+| **VAGA-006** | Não deve ser possível enviar uma proposta de reserva sem os dados necessários preenchidos | Alerta/proposta não enviada |
+| **VAGA-007** | Deve ser possível enviar uma proposta de reserva com todos os dados preenchidos | Proposta enviada |
+
+## 7 - Tela de notificações
+
+>RF-009, RF-014
+
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
+|---|---|---|
+| **NOTA-001** | Deve ser possível ver notificação caso uma dúvida seja publicada na página de uma das vagas do usuário | Notificação presente |
+| **NOTA-002** | Deve ser possível ir para a página da vaga ao clicar na notificação de dúvida | Redireciona para página correta |
+| **NOTA-003** | Deve ser possível ver notificação caso haja solicitação de reserva de uma das vagas do usuário | Notificação presente |
+| **NOTA-004** | Deve ser possível ir para a página de solicitações ao clicar na notificação de nova solicitação | Redireciona para página correta |
+| **NOTA-005** | Deve ser possível ver notificação caso uma nova mensagem seja recebida | Notificação presente |
+| **NOTA-006** | Deve ser possível ir para a página da conversa ao clicar na notificação de nova mensagem | Redireciona para página correta |
+| **NOTA-007** | Deve ser possível ver notificação caso uma dúvida publicada pelo usuário seja respondida  | Notificação presente |
+| **NOTA-008** | Deve ser possível ir para a página da vaga ao clicar na notificação de dúvida | Redireciona para página correta |
+| **NOTA-009** | Deve ser possível ver notificação caso uma solicitação de reserva feita pelo usuário seja rejeitada | Notificação presente |
+| **NOTA-010** | Deve ser possível ver notificação caso uma solicitação de reserva feita pelo usuário seja aprovada | Notificação presente |
