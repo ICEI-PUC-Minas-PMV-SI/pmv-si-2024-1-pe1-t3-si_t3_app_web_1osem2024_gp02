@@ -6,17 +6,20 @@ form.addEventListener('submit', e => {
         ? JSON.parse(localStorage.getItem("Cadastros"))
         : [{}];
 
-    data.map(val => {
-        if (val.email === form[0].value && val.senha === criptografarSenha(form[1].value)) {
-            const { id, email, nome } = val
-            const dataArray = JSON.stringify({ id, email, nome });
-            localStorage.setItem("Logado", dataArray);
-            alert("Login feito com sucesso.");
-            window.location.href = '../Home/index.html';
-        } else {
-            alert("Email ou senha incorretos.");
-        }
+    const user = data.find(val => {
+        return val.email === form[0].value && val.senha === criptografarSenha(form[1].value) 
     });
+
+    if (user) {
+        const { id, email, nome } = user
+        const dataArray = JSON.stringify({ id, email, nome });
+        localStorage.setItem("Logado", dataArray);
+        alert("Login feito com sucesso.");
+        window.location.href = '../Home/index.html';
+    } else {
+        alert("Email ou senha incorretos.");
+    }
+
 });
 
 function criptografarSenha(senha) {
