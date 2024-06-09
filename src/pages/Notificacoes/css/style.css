@@ -1,14 +1,11 @@
-@import "../../../components/Menu/css/style.css";
+/* tema */
+@import "../../../assets/css/theme.css";
 
-body {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
+/* header */
+@import url('../../../components/Header/css/style.css');
 
-div {
-  margin-bottom: 20px;
-}
+/* menu */
+@import url('../../../components/Menu/css/style.css');
 
 Footer {
   position: fixed;

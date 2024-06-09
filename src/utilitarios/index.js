@@ -39,31 +39,31 @@ function route(key, id = null) {
         },
         {
             key: 'notificacoes',
-            href: '../Home/home.html'
+            href: '../Notificacoes/index.html'
         },
         {
             key: 'mensagens',
-            href: '../Home/home.html'
+            href: '../Mensa/index.html'
         },
         {
             key: 'menu',
             href: '../Menu/index.html'
         },
         {
-            key: 'nova-vaga',
-            href: '../MyParkingSpace/index.html'
+            key: 'minha-vaga',
+            href: '../MinhaVaga/index.html'
         },
         {
             key: 'buscar-vagas',
-            href: '../Search/index.html'
+            href: '../BuscarVagas/index.html'
         },
         {
             key: 'minhas-vagas',
-            href: '../Proposal/index.html'
+            href: '../MinhasVagas/index.html'
         },
         {
             key: 'vaga',
-            href: '../MyParkingSpace/index.html'
+            href: '../DetalheVaga/index.html'
         }
     ]
     
@@ -77,6 +77,6 @@ function route(key, id = null) {
         window.location.href = page.href
 
     }
-    else window.location.href = '../NotFound/index.html'
+    else window.location.href = '../PaginaNaoEncontrada/index.html'
 
 }

@@ -6,11 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     vagas.forEach(vaga => {
 
-        if (vaga.userId != user.id) {
+        if (vaga.locatarioId == user.id) {
             
-            vaga.dateTime = formatDateTime(vaga.startDate, vaga.startTime)
-            vaga.endDateTime = formatDateTime(vaga.endDate, vaga.endTime)
-            loadComponent('vagas', '../../components/CardVaga/index.html', vaga);
+            vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
+            vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
+
+            if (vaga.status == 'livre') {
+                loadComponent('vagas', '../../components/CardVagaLivre/index.html', vaga);
+            } else if (vaga.status == 'solicitacao') {
+                loadComponent('vagas', '../../components/CardVagaSolicitacao/index.html', vaga);
+            } else if (vaga.status == 'reservado') {
+                loadComponent('vagas', '../../components/CardVagaReservadaLocador/index.html', vaga);
+            }
             
         }
 

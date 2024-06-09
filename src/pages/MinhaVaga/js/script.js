@@ -18,20 +18,20 @@ document.addEventListener('DOMContentLoaded', function () {
             return vaga.id == id
         })
     
-        if (vaga && vaga.userId == user.id) {
-            form[0].value = vaga.condominium;
-            form[1].value = vaga.parkingSpace;
-            form[2].value = vaga.description;
-            form[3].value = vaga.negotiation;
-            form[4].value = vaga.startDate;
-            form[5].value = vaga.startTime;
-            form[6].value = vaga.endDate;
-            form[7].value = vaga.endTime;
-            form[8].value = vaga.amount;
+        if (vaga && vaga.locatarioId == user.id) {
+            form[0].value = vaga.condominio;
+            form[1].value = vaga.nome;
+            form[2].value = vaga.descricao;
+            form[3].value = vaga.negociacao;
+            form[4].value = vaga.dataInicial;
+            form[5].value = vaga.horaInicial;
+            form[6].value = vaga.dataFinal;
+            form[7].value = vaga.horaFinal;
+            form[8].value = vaga.valor;
         } else if (vaga) {
-            window.location.href = '../Forbidden/index.html'
+            window.location.href = '../AcessoNegado/index.html'
         } else {
-            window.location.href = '../NotFound/index.html'
+            window.location.href = '../PaginaNaoEncontrada/index.html'
         }
     
     }
@@ -43,15 +43,15 @@ form.addEventListener('submit', e => {
 
     data = {
         ...vaga,
-        condominium: form[0].value,
-        parkingSpace: form[1].value,
-        description: form[2].value,
-        negotiation: form[3].value,
-        startDate: form[4].value,
-        startTime: form[5].value,
-        endDate: form[6].value,
-        endTime: form[7].value,
-        amount: `${form[8].value}`,
+        condominio: form[0].value,
+        nome: form[1].value,
+        descricao: form[2].value,
+        negociacao: form[3].value,
+        dataInicial: form[4].value,
+        horaInicial: form[5].value,
+        dataFinal: form[6].value,
+        horaFinal: form[7].value,
+        valor: `${form[8].value}`,
     }
 
     if (data.id) {
@@ -65,7 +65,7 @@ form.addEventListener('submit', e => {
         data = {
             ...data,
             id: vagas.length + 1,
-            userId: user.id,
+            locatarioId: user.id,
             status: 'livre',
         }
 

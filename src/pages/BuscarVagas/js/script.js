@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     vagas.forEach(vaga => {
 
-        if (vaga.userId == user.id) {
+        if (vaga.locatarioId != user.id) {
             
-            vaga.dateTime = formatDateTime(vaga.startDate, vaga.startTime)
-            vaga.endDateTime = formatDateTime(vaga.endDate, vaga.endTime)
+            vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
+            vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
             loadComponent('vagas', '../../components/CardVaga/index.html', vaga);
             
         }

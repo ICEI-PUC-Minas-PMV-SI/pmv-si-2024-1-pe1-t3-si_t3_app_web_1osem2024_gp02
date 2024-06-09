@@ -1,13 +1,26 @@
+const vagas = JSON.parse(localStorage.getItem("Vagas"))
+    ? JSON.parse(localStorage.getItem("Vagas"))
+    : [];
+
 document.addEventListener('DOMContentLoaded', function () {
-    
-    if (JSON.parse(localStorage.getItem("Logado"))) {
 
-        const data = JSON.parse(localStorage.getItem("Logado"));
+    document.getElementById('titulo').innerText = `Olá, ${user.nome}!`
 
-        document.getElementById('titulo').innerText = `Olá, ${data.nome}!`
+    vagas.forEach(vaga => {
+
+        if (vaga.status == 'reservado') {
+            
+            vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
+            vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
         
-    } else {
-        window.location.href = '../Login/index.html'
-    }
+            if (vaga.locatarioId == user.id) {
+                loadComponent('vagas', '../../components/CardVagaReservadaLocatario/index.html', vaga);
+            } else if (vaga.locadorId == user.id) {
+                loadComponent('vagas', '../../components/CardVagaReservadaLocador/index.html', vaga);
+            }
+
+        }
+
+    });
 
 })
