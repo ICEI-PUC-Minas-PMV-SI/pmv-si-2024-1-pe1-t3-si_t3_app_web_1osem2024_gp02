@@ -42,20 +42,25 @@ function formatDateTime(data, hora) {
     return dataHoraFormatada;
 }
 
-function loadComponent(elementId, componentUrl, props = {}, callback = () => { return null }) {
-    fetch(componentUrl)
+/*
+    elementoId => id em que será inserido o conteúdo
+    caminhoComponente => local da pasta que está o HTML a ser inserido
+    parametros => parametros a serem inseridos no componente
+    funcaoRetorno => funcao a ser executada após o carregamento do componente
+*/
+function loadComponent(elementoId, caminhoComponente, parametros = {}, funcaoRetorno = () => { return null }) {
+    fetch(caminhoComponente)
         .then(response => response.text())
         .then(data => {
 
-            // Substituir placeholders pelos valores dos parâmetros
-            Object.keys(props).forEach(key => {
+            Object.keys(parametros).forEach(key => {
                 const placeholder = `{{${key}}}`;
-                data = data.split(placeholder).join(props[key]);
+                data = data.split(placeholder).join(parametros[key]);
             });
 
-            document.getElementById(elementId).insertAdjacentHTML('afterbegin', data);
+            document.getElementById(elementoId).insertAdjacentHTML('afterbegin', data);
             
-            return callback()
+            return funcaoRetorno()
         })
         .catch(error => {
             console.error('Error loading component:', error);
@@ -83,7 +88,7 @@ function route(key, id = null) {
         },
         {
             key: 'mensagens',
-            href: '../Mensa/index.html'
+            href: '../Mensagens/index.html'
         },
         {
             key: 'menu',
