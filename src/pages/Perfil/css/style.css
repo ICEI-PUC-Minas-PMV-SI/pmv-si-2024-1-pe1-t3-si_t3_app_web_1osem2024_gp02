@@ -2,6 +2,65 @@
 @import "../../../components/logo/css/style.css";
 
 .container {
-  background-color: brown;
   margin: 40px;
+  padding-left: 20px !important;
+}
+
+.imgPerfil {
+  height: 100px;
+  width: 100px;
+}
+
+.infoPerfil{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.textPerfil {
+  margin-left: 15px;
+}
+
+.infoUser {
+  margin-top: 20px;
+}
+
+.divRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.alinhar {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sizeNum {
+  font-size: 25px;
+}
+
+.divColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.reputacao {
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.starReputacao {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.starAvaliacao {
+  margin-top: -15px;
+}
+
+.imgPerfilAvali {
+  height: 65px;
+  width: 65px;
 }
