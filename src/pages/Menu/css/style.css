@@ -7,9 +7,6 @@
 /* menu */
 @import url('../../../components/Menu/css/style.css');
 
-/* card */
-@import url('../../../components/CardVaga/css/style.css');
-
 .bottons {
   display: flex;
   flex-direction: column;

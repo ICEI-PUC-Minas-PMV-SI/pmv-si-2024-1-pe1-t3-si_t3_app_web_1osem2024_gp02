@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             
         if (vaga) {
-            document.getElementById("vagaNome").innerHTML = `Olá, ${vaga.nome}!`
+            document.getElementById("vagaNome").innerHTML = `Vaga ${vaga.nome}`
             document.getElementById("vagaNomeUsuario").innerHTML = vaga.aaa
             document.getElementById("vagaDescricao").innerHTML = vaga.descricao
             document.getElementById("vagaDataInicial").innerHTML = formatDateTime(vaga.dataInicial, vaga.horaInicial)

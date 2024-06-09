@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return vaga.id == id
         })
     
-        if (vaga && vaga.locatarioId == user.id) {
+        if (vaga && vaga.locatario.id == user.id) {
             form[0].value = vaga.condominio;
             form[1].value = vaga.nome;
             form[2].value = vaga.descricao;
@@ -65,7 +65,7 @@ form.addEventListener('submit', e => {
         data = {
             ...data,
             id: vagas.length + 1,
-            locatarioId: user.id,
+            locatario: user,
             status: 'livre',
         }
 
