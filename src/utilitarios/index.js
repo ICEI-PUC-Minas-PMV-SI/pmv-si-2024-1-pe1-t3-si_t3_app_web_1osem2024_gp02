@@ -49,6 +49,10 @@ function route(key, id = null) {
 
     const pages = [
         {
+            key: 'perfil',
+            href: '../Perfil/index.html'
+        },
+        {
             key: 'cadastro',
             href: '../Cadastro/index.html'
         },
