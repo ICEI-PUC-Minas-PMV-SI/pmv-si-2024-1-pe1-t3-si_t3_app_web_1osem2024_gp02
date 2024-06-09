@@ -20,11 +20,11 @@ Comente sobre as ferramentas de testes utilizadas.
 
 Definimos um plano de testes unitários para cada página a serem realizados em Jest.
 
-### 1 - Tela de cadastro
+## 1 - Tela de cadastro
 
 > RF-001
 
-| **Caso de teste unitário** | **Descrição** | **Resultado esperado** |
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
 | **CADASTRO-001** | Deve renderizar todos os componente corretamente | Campo de nome, email, cpf, senha, confirmação de senha, botão de cadastro e login estão presentes |
 | **CADASTRO-002** | Deve criar a conta caso todos os dados estejam corretos | Conta criada com sucesso |
@@ -32,11 +32,11 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 | **CADASTRO-004** | Não deve criar a conta com um email inválido | Alerta/Não é possível criar a conta |
 | **CADASTRO-005** | Não deve criar a conta caso as senhas sejam diferentes | Alerta/Não é possível criar a conta |
 
-### 2 - Tela de login
+## 2 - Tela de login
 
 > RNF-004
 
-| **Caso de teste unitário** | **Descrição** | **Resultado esperado** |
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
 | **LOGIN-001** | Deve renderizar todos os componente corretamente | Todos os campos essenciais estão presentes |
 | **LOGIN-002** | Não deve ser possível entrar com um email não cadastrado | Alerta/Não é possível entrar |
@@ -45,21 +45,21 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 | **LOGIN-005** | Deve ser possível ir para a recuperação de senha | Redireciona para recuperação de senha |
 | **LOGIN-006** | Deve ser possível entrar | Loginrealizado com sucesso |
 
-### 3 - Tela principal
+## 3 - Tela principal
 
 > RNF-003, RF-005, RF-006
 
-| **Caso de teste unitário** | **Descrição** | **Resultado esperado** |
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
 | **HOME-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
 | **HOME-002** | Deve ser possível ir para a busca de vagas ao clicar no botão | Redireciona para busca de vagas |
 | **HOME-003** | Deve ser possível ir para o cadastro de vagas ao clicar no botão | Redireciona paro cadastro de vagas |
 
-### 4 - Tela de busca de vagas
+## 4 - Tela de busca de vagas
 
 > RF-006
 
-| **Caso de teste unitário** | **Descrição** | **Resultado esperado** |
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
 | **BUSCA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
 | **BUSCA-002** | Deve ser possível filtrar os resultados por preço | Exibe resultados de acordo com o filtro de preço |
@@ -67,11 +67,11 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 | **BUSCA-004** | Deve ser possível filtrar os resultados por horário | Exibe resultados de acordo com o filtro de horário |
 | **BUSCA-005** | Deve ser possível ir para os detalhes de uma vaga ao clicar sobre o anuncio | Exibe redirecionar para os detealhes da vaga |
 
-### 5 - Menu
+## 5 - Menu
 
 > RNF-003
 
-| **Caso de teste unitário** | **Descrição** | **Resultado esperado** |
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
 | **MENU-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
 | **MENU-002** | Deve ser possível ir para a tela de notificações ao clicar no botão | Redireciona para a tela de notificações |
@@ -82,3 +82,16 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 | **MENU-007** | Deve ser possível ir para a tela de histórico de reservas ao clicar no botão | Redireciona para a tela de histórico de reservas |
 | **MENU-008** | Deve ser possível ir para a tela de reclamações ao clicar no botão | Redireciona para a tela de reclamações |
 | **MENU-009** | Deve ser possível encerrar a sessão no aplicativo ao clicar no botão | Encerra a sessão |
+
+## 5 - Tela de criação de nova vaga
+
+>RF-005, RNF-004
+
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
+|---|---|---|
+| **NOVA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **NOVA-001** | Deve ser possível ver todos os condomínios dos quais o usuário faz parte na listagem | Todos os condomínios válidos listados |
+| **NOVA-001** | Não deve ser possível ver condomínios dos quais o usuário não faz parte na listagem | Condomínios inválidos não são listados |
+| **NOVA-001** | Não deve ser possível criar uma vaga com a data e hora final menor que a inicial | Alerta/Não é possível criar |
+| **NOVA-001** | Não deve ser possível criar uma vaga com dados incompletos | Alerta/Não é possível criar |
+| **NOVA-001** | Deve ser possível criar uma vaga com todos os dados válidos | Vaga publicada |
