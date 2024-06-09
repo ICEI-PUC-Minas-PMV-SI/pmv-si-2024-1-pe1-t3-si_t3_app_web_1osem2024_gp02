@@ -13,31 +13,20 @@
     
     <header id="header"></header>
     <nav id="menu"></nav>
-
-    <header class="d-flex align-items-center fixed-top bg-white shadow-sm">
-      <button type="button" class="btn btn-light bg-white">
-        <i class="bi bi-arrow-left fs-1"></i>
-      </button>
-    
-      <h1 class="m-0 ms-2">Vaga 38</h1>
-    </header>
-
-    <main class="container my-5 py-5 px-4 d-flex flex-column gap-4">
+      
+    <main class="container">
+      <h1 class="m-0 ms-2" id="vagaNome">Vaga 38</h1>
       <section id="info" class="d-flex flex-column px-3">
         <div id="ownner-name" class="d-flex align-items-center gap-3 mb-3">
           <i class="bi bi-person-circle text-success fs-1 align-middle"></i>
-
-          <h4 class="display-6 m-0">Fulano de Tal</h4>
-
-          <a href="#" class="link-success">Ver perfil</a>
+          <h4 class="display-6 m-0" id="vagaNomeUsuario">Fulano de Tal</h4>
         </div>
   
         <div class="d-flex flex-row gap-3">
           <i class="bi bi-geo-alt-fill fs-3 text-success align-middle"></i>
-  
           <p>
             <span class="text-muted d-block">Localização</span>
-            <span  class="lead">Bloco A, ao lado da guarita</span>
+            <span  class="lead" id="vagaDescricao">Bloco A, ao lado da guarita</span>
           </p>
         </div>
   
@@ -46,8 +35,8 @@
   
           <p class="m-0">
             <span class="text-muted d-block">Disponibilidade</span>
-            <span class="lead d-block">De: xx/xx/xxxx hh:mm</span>
-            <span class="lead d-block">Até: xx/xx/xxxx hh:mm</span>
+            <span class="lead d-block" id="vagaDataInicial">De: xx/xx/xxxx hh:mm</span>
+            <span class="lead d-block" id="vagaDataFinal">Até: xx/xx/xxxx hh:mm</span>
           </p>
         </div>
       </section>

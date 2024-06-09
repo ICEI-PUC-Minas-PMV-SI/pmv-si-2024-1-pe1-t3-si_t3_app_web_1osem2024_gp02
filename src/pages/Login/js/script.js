@@ -8,11 +8,11 @@ form.addEventListener('submit', e => {
 
     data.map(val => {
         if (val.email === form[0].value && val.senha === criptografarSenha(form[1].value)) {
-            const { email, nome } = val
+            const { id, email, nome } = val
             const dataArray = JSON.stringify({ id, email, nome });
             localStorage.setItem("Logado", dataArray);
             alert("Login feito com sucesso.");
-            window.location.href = '../Home/home.html';
+            window.location.href = '../Home/index.html';
         } else {
             alert("Email ou senha incorretos.");
         }

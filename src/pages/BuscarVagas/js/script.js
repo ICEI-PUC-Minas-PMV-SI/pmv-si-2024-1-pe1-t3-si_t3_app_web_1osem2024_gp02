@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
             
             vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
             vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
-            loadComponent('vagas', '../../components/CardVaga/index.html', vaga);
+            loadComponent('vagas', '../../components/CardVagaLivreBusca/index.html', vaga);
             
         }
 

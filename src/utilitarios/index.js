@@ -12,6 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
+function formatDateTime(data, hora) {
+    const partesData = data.split("-");
+    const dia = partesData[2];
+    const mes = partesData[1];
+    const ano = partesData[0];
+
+    const partesHora = hora.split(":");
+    const horas = partesHora[0];
+    const minutos = partesHora[1];
+
+    const dataHoraFormatada = dia + "/" + mes + "/" + ano + " " + horas + ":" + minutos;
+
+    return dataHoraFormatada;
+}
+
 function loadComponent(elementId, componentUrl, props = {}) {
     fetch(componentUrl)
         .then(response => response.text())
@@ -33,6 +48,10 @@ function loadComponent(elementId, componentUrl, props = {}) {
 function route(key, id = null) {
 
     const pages = [
+        {
+            key: 'cadastro',
+            href: '../Cadastro/index.html'
+        },
         {
             key: 'home',
             href: '../Home/index.html'
