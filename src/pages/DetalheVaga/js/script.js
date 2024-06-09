@@ -72,6 +72,19 @@ form.addEventListener('submit', e => {
 
     const dataArray = JSON.stringify(vagas);
     localStorage.setItem("Vagas", dataArray);
+
+    notificacoes.push({
+        id: notificacoes.length + 1,
+        vagaId: data.id,
+        userId: data.locatario.id,
+        tipo: 'solicitacao',
+        titulo: `Solicitação - Vaga ${ data.id }`,
+        descricao: `${ data.locador.nome } deseja utilizar sua vaga. Clique para visualizar.`,
+        visualizado: false
+    })
+
+    const dataNotificacoesArray = JSON.stringify(notificacoes);
+    localStorage.setItem("Notificacoes", dataNotificacoesArray);
     
 });
 

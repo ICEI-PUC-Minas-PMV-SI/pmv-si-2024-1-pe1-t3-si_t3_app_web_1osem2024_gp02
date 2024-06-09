@@ -1,4 +1,7 @@
 let user;
+let notificacoes = JSON.parse(localStorage.getItem("Notificacoes"))
+    ? JSON.parse(localStorage.getItem("Notificacoes"))
+    : [];
 
 document.addEventListener('DOMContentLoaded', function () {
     if (!JSON.parse(localStorage.getItem("Logado"))) {
@@ -8,9 +11,21 @@ document.addEventListener('DOMContentLoaded', function () {
     user = JSON.parse(localStorage.getItem("Logado"))
     
     loadComponent('header', '../../components/Header/index.html');
-    loadComponent('menu', '../../components/Menu/index.html');
+    loadComponent('menu', '../../components/Menu/index.html', {}, ativarNotificacao);
 
 })
+
+function ativarNotificacao() {
+
+    const novaNotificacao = notificacoes.filter(notificacao => {
+        return notificacao.userId == user.id && !notificacao.visualizado
+    })
+
+    if (novaNotificacao.length > 0) {
+        menu.querySelector('#iconeNotificacoes').src = '../../assets/icons/novas-notificacoes.svg';
+    }
+
+}
 
 function formatDateTime(data, hora) {
     const partesData = data.split("-");
@@ -27,7 +42,7 @@ function formatDateTime(data, hora) {
     return dataHoraFormatada;
 }
 
-function loadComponent(elementId, componentUrl, props = {}) {
+function loadComponent(elementId, componentUrl, props = {}, callback = () => { return null }) {
     fetch(componentUrl)
         .then(response => response.text())
         .then(data => {
@@ -38,7 +53,9 @@ function loadComponent(elementId, componentUrl, props = {}) {
                 data = data.split(placeholder).join(props[key]);
             });
 
-            document.getElementById(elementId).innerHTML = data;
+            document.getElementById(elementId).insertAdjacentHTML('afterbegin', data);
+            
+            return callback()
         })
         .catch(error => {
             console.error('Error loading component:', error);

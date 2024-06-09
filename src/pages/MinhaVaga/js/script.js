@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-console.log(vaga)
     let data = {
         ...vaga,
         condominio: form[0].value,

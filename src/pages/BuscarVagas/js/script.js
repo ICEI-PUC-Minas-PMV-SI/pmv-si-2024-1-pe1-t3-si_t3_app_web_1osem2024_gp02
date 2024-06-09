@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     vagas.forEach(vaga => {
 
-        if (vaga.locatario.id != user.id) {
+        if (vaga.locatario.id != user.id && vaga.status == 'livre') {
             
             vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
             vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
