@@ -8,17 +8,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     vagas.forEach(vaga => {
 
-        if (vaga.status == 'reservado') {
-            
-            vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
-            vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
+        vaga.dateTime = formatDateTime(vaga.dataInicial, vaga.horaInicial)
+        vaga.dataFinalTime = formatDateTime(vaga.dataFinal, vaga.horaFinal)
+    
+        if (vaga.status == 'solicitacao' && vaga.locatario.id == user.id) {
         
-            if (vaga.locatario.id == user.id) {
-                loadComponent('vagas', '../../components/CardVagaReservadaLocatario/index.html', vaga);
-            } else if (vaga.locadorId == user.id) {
-                loadComponent('vagas', '../../components/CardVagaReservadaLocador/index.html', vaga);
-            }
+            loadComponent('vagas', '../../components/CardVagaSolicitacaoLocatario/index.html', vaga);
+        
+        } else if (vaga.status == 'solicitacao' && vaga.locador.id == user.id) {
+            
+            loadComponent('vagas', '../../components/CardVagaSolicitacaoLocador/index.html', vaga);
 
+        }  else if (vaga.status == 'reservado' && vaga.locatario.id == user.id) {
+        
+            loadComponent('vagas', '../../components/CardVagaReservadaLocatario/index.html', vaga);
+        
+        } else if (vaga.status == 'reservado' && vaga.locador.id == user.id) {
+        
+            loadComponent('vagas', '../../components/CardVagaReservadaLocador/index.html', vaga);
+        
         }
 
     });

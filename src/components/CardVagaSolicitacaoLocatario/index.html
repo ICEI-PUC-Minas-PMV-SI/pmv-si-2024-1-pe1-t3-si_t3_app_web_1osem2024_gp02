@@ -2,15 +2,18 @@
     <div onclick="route('vaga', {{id}})" class="card-body">
         <div class="d-flex justify-content-between align-items-center">
             <p>{{condominio}}</p>
-            <p class="ml-auto badge-secondary">Locatário</p>
+            <p class="ml-auto badge-primary">Locador</p>
         </div>
         <h2>Vaga {{nome}}</h2>
         <p><b>De {{dateTime}}</b></p>
         <p><b>Até {{dataFinalTime}}</b></p>
     </div>
-    <!-- <div class="card-buttons">
-        <button class="">
-            Mais Detalhes
+    <div class="card-buttons">
+        <button onclick="route('aprovar-vaga', {{id}})" class="">
+            Recusar
         </button>
-    </div> -->
+        <button onclick="route('negar-vaga', {{id}})" class="">
+            Aprovar
+        </button>
+    </div>
 </div>

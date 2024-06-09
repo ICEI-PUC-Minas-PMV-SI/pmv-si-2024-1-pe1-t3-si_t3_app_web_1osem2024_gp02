@@ -11,20 +11,30 @@ let vagas = JSON.parse(localStorage.getItem("Vagas"))
     : [];
 
 document.addEventListener('DOMContentLoaded', function () {
-
     
     if (id) {
         
         vaga = vagas.find(vaga => {
             return vaga.id == id
-            })
-            
+        })
+
         if (vaga) {
+            
             document.getElementById("vagaNome").innerHTML = `Vaga ${vaga.nome}`
-            document.getElementById("vagaNomeUsuario").innerHTML = vaga.locatario.nome
+            document.getElementById("vagaNomeUsuario").innerHTML = vaga.locador && vaga.locatario == user.id ?  vaga.locador.nome : vaga.locatario.nome
             document.getElementById("vagaDescricao").innerHTML = vaga.descricao
             document.getElementById("vagaDataInicial").innerHTML = formatDateTime(vaga.dataInicial, vaga.horaInicial)
             document.getElementById("vagaDataFinal").innerHTML = formatDateTime(vaga.dataFinal, vaga.horaFinal)
+            
+            if (vaga.proposta && vaga.status == 'solicitacao') {
+                form[0].value = vaga.dataInicial
+                form[1].value = vaga.horaInicial
+                form[2].value = vaga.dataFinal
+                form[3].value = vaga.horaFinal
+                form[4].value = vaga.pagamento
+                document.getElementById("btnSalvar").innerHTML = 'Atualizar Proposta'
+            }
+
         } else {
             window.location.href = '../PaginaNaoEncontrada/index.html'
         }
@@ -32,6 +42,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     
 })
+
+form.addEventListener('submit', e => {
+    
+    e.preventDefault();
+
+    let data = {
+        ...vaga,
+        locador: user,
+        status: 'solicitacao',
+        proposta: {
+            dataInicial: form[0].value,
+            horaInicial: form[1].value,
+            dataFinal: form[2].value,
+            horaFinal: form[3].value,
+            pagamento: form[4].value,
+        }
+    }
+
+    vagas = vagas.map(vaga => {
+        return vaga.id == data.id ? data : vaga
+    });
+
+    form[0].value = '';
+    form[1].value = '';
+    form[2].value = '';
+    form[3].value = '';
+    form[4].value = '';
+
+    const dataArray = JSON.stringify(vagas);
+    localStorage.setItem("Vagas", dataArray);
+    
+});
 
 function formatCoin(input) {
     let valor = input.value.replace(/\D/g, '');

@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
-    data = {
+console.log(vaga)
+    let data = {
         ...vaga,
         condominio: form[0].value,
         nome: form[1].value,

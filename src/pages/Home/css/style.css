@@ -7,6 +7,12 @@
 /* menu */
 @import url('../../../components/Menu/css/style.css');
 
+/* cards */
+@import url('../../../components/CardVagaSolicitacaoLocador/css/style.css');
+@import url('../../../components/CardVagaSolicitacaoLocatario/css/style.css');
+@import url('../../../components/CardVagaReservadaLocador/css/style.css');
+@import url('../../../components/CardVagaReservadaLocatario/css/style.css');
+
 .card-link button {
     background: none;
     margin: 0 !important;
