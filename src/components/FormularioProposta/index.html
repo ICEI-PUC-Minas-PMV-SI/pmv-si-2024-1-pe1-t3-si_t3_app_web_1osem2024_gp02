@@ -1,0 +1,58 @@
+<h4>Selecione o período de reserva</h4>
+<form id="form" onsubmit="enviarFormulario()" class="d-flex flex-column gap-3 px-3">
+    <div id="dateTime" class="d-flex flex-column gap-2">
+        <div class="container p-0">
+            <div class="row">
+                <p class="text-muted col-1">De:</p>
+
+                <div class="col d-flex gap-2">
+                    <input id="min-date" type="date" class="form-control w-75">
+
+                    <input id="min-time" type="time" class="form-control w-50">
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-0">
+            <div class="row">
+                <p class="text-muted col-1">Até:</p>
+
+
+                <div class="col d-flex gap-2">
+                    <input id="max-date" type="date" class="form-control w-75">
+
+                    <input id="max-time" type="time" class="form-control w-50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="totalvalor" class="m-0">
+        <span class="text-muted">Total:</span>
+        <strong class="lead">R$: 00,00</strong>
+    </p>
+
+    <div id="paymentMethods">
+        <p class="text-muted m-1">Formas de pagamento:</p>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="money" id="money">
+            <label class="form-check-label" for="money">
+                Dinheiro
+            </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="pix" id="pix">
+            <label class="form-check-label" for="pix">
+                Pix
+            </label>
+        </div>
+    </div>
+
+    <div class="d-grid">
+        <button type="submit" class="btn btn-success" id="btnSalvar">
+            Solicitar Vaga
+        </button>
+    </div>
+</form>
