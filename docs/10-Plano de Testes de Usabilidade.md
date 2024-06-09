@@ -181,6 +181,7 @@ Resultado esperado (dados inválidos)	1-Não exibição das informações sobre 
 Resultado obtido (dados válidos)	
 Resultado obtido (dados inválidos)	
 
+[Plano de teste - Vaga Livre.xlsx](https://github.com/user-attachments/files/15754142/Plano.de.teste.-.Vaga.Livre.xlsx)
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/39f74744-ee76-44a7-9a6b-32fc9bdfbd0c)
 
