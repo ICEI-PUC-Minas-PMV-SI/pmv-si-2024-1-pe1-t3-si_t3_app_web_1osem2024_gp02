@@ -110,32 +110,6 @@ button:hover {
 
 /* card */
 
-.card-default {
-    border: 1px solid #BDBDBD;
-    border-radius: 8px !important;
-    margin-top: 24px !important;
-    margin-bottom: 24px !important;
-}
-
-.card-default .card-body {
-    padding: 23px 23px 12px 23px;
-}
-
-.card-default .card-buttons {
-    border-top: 1px solid #BDBDBD;
-}
-
-.card-default .card-buttons a {
-    padding: 23px 10px;
-    display: inline-block;
-    width: 49% !important;
-    text-align: center;
-}
-
-.card-default .card-buttons a.border-left {
-    border-left: 1px solid #BDBDBD;
-}
-
 .card-link {
     border: 1px solid #BDBDBD;
     border-radius: 8px !important;
