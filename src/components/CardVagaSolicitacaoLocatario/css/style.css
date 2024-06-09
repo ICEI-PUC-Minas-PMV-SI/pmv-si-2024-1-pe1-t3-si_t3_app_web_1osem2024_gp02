@@ -1,0 +1,36 @@
+.card-default {
+    border: 1px solid #BDBDBD;
+    border-radius: 8px !important;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.card-default .card-body {
+    padding: 23px 23px 12px 23px;
+}
+
+.card-default .card-buttons {
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+}
+
+.card-default .card-buttons button {
+    background: none;
+    padding: 23px 10px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 !important;
+    width: 100%;
+}
+.card-default .card-buttons .recusar{
+    color: #4F4F4F;
+}
+.card-default .card-buttons .aprovar{
+    border-radius: 0 0 4px 0 !important;
+    background-color: #087560;
+    color: white;
+}
+
+.card-default .card-buttons a.border-left {
+    border-left: 1px solid #BDBDBD;
+}

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (vaga.status == 'livre') {
                 loadComponent('vagas', '../../components/CardVagaLivre/index.html', vaga);
             } else if (vaga.status == 'solicitacao') {
-                loadComponent('vagas', '../../components/CardVagaSolicitacao/index.html', vaga);
+                loadComponent('vagas', '../../components/CardVagaSolicitacaoLocatario/index.html', vaga);
             } else if (vaga.status == 'reservado') {
                 loadComponent('vagas', '../../components/CardVagaReservadaLocador/index.html', vaga);
             }

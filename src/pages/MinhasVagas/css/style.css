@@ -9,5 +9,5 @@
 
 /* card */
 @import url('../../../components/CardVagaLivre/css/style.css');
-@import url('../../../components/CardVagaSolicitacao/css/style.css');
+@import url('../../../components/CardVagaSolicitacaoLocatario/css/style.css');
 @import url('../../../components/CardVagaReservadaLocatario/css/style.css');
