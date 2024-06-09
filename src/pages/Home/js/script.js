@@ -32,3 +32,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 })
+
+function atualizarStatus(status, id) {
+    
+    const data = vagas.map(vaga => { 
+        if (vaga.id == id) {
+            vaga.status = status
+        }    
+        return vaga;
+    })
+
+    const dataArray = JSON.stringify(vagas);
+    localStorage.setItem("Vagas", dataArray);
+    window.location.reload()
+    
+}

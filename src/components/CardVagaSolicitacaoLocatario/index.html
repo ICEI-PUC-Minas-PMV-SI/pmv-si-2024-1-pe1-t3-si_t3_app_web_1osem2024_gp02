@@ -9,10 +9,10 @@
         <p><b>Até {{dataFinalTime}}</b></p>
     </div>
     <div class="card-buttons">
-        <button onclick="route('aprovar-vaga', {{id}})" class="recusar">
+        <button onclick="atualizarStatus('livre', {{id}})" class="recusar">
             Recusar
         </button>
-        <button onclick="route('negar-vaga', {{id}})" class="aprovar">
+        <button onclick="atualizarStatus('reservado', {{id}})" class="aprovar">
             Aprovar
         </button>
     </div>
