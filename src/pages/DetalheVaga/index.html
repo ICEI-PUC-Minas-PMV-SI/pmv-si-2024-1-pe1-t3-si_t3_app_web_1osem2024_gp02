@@ -9,46 +9,48 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
 
-  <body class="bg-light">
+  <body>
     
     <header id="header"></header>
     <nav id="menu"></nav>
       
     <div class="container">
-      <h1 class="m-0 ms-2" id="vagaNome"></h1>
-      <div id="info" class="d-flex flex-column px-3">
-        <div id="ownner-name" class="d-flex align-items-center gap-3 mb-3">
-          <i class="bi bi-person-circle text-success fs-1 align-middle"></i>
-          <h4 class="display-6 m-0" id="vagaNomeUsuario"></h4>
-        </div>
-  
-        <div class="d-flex flex-row gap-3">
-          <i class="bi bi-geo-alt-fill fs-3 text-success align-middle"></i>
-          <p>
-            <span class="text-muted d-block">Localização</span>
-            <span  class="lead" id="vagaDescricao"></span>
-          </p>
-        </div>
-  
-        <div class="d-flex flex-row gap-3">
-          <i class="bi bi-calendar-week fs-3 text-success align-middle"></i>
-  
-          <p class="m-0">
-            <span class="text-muted d-block">Disponibilidade</span>
-            <span class="lead d-block" id="vagaDataInicial"></span>
-            <span class="lead d-block" id="vagaDataFinal"></span>
-          </p>
+      <h1 class="mb-5" id="vagaNome"></h1>
+      <div class="d-flex flex-row gap-3 align mb-4">
+        <i class="bi bi-person-circle"></i>
+        <div>
+          <h6>Usuário</h6>
+          <p id="vagaNomeUsuario"></p>
         </div>
       </div>
 
+      <div class="d-flex flex-row gap-3 align mb-4">
+        <i class="bi bi-geo-alt-fill"></i>
+        <div>
+          <h6>Localização</h6>
+          <p id="vagaDescricao"></p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row gap-3 align mb-4">
+        <i class="bi bi-calendar-week"></i>
+        <div>
+          <h6>Disponibilidade</h6>
+          <p>De: <span id="vagaDataInicial"></span></p>
+          <p>Até: <span id="vagaDataFinal"></span></p>
+        </div>
+      </div>
+
+      <div id="proposta" class="d-flex flex-row gap-3 align mb-4"></div>
       <div id="formularioProposta"></div>
-      <div id="proposta"></div>
       <div id="formularioAprovacao"></div>
 
+      <hr>
+
       <div id="questions">
-        <h4>Dúvidas sobre a vaga?</h4>
+        <h5>Dúvidas sobre a vaga?</h5>
   
-        <form class="d-flex flex-column gap-3 px-3">
+        <form class="d-flex flex-column gap-3">
           <textarea
               id="message"
               class="form-control"
