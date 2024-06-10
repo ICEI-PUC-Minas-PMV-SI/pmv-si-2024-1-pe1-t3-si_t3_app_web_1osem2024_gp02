@@ -22,11 +22,11 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 ## 1 - Tela de cadastro
 
-> RF-001
+> RF-001, RNF-004
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **CADASTRO-001** | Deve renderizar todos os componente corretamente | Campo de nome, email, cpf, senha, confirmação de senha, botão de cadastro e login estão presentes |
+| **CADASTRO-001** | Deve renderizar todos os componentes corretamente | Campo de nome, email, cpf, senha, confirmação de senha, botão de cadastro e login estão presentes |
 | **CADASTRO-002** | Deve criar a conta caso todos os dados estejam corretos | Conta criada com sucesso |
 | **CADASTRO-003** | Não deve criar a conta com um cpf inválido | Alerta/Não é possível criar a conta |
 | **CADASTRO-004** | Não deve criar a conta com um email inválido | Alerta/Não é possível criar a conta |
@@ -38,7 +38,7 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **LOGIN-001** | Deve renderizar todos os componente corretamente | Todos os campos essenciais estão presentes |
+| **LOGIN-001** | Deve renderizar todos os componentes corretamente | Todos os campos essenciais estão presentes |
 | **LOGIN-002** | Não deve ser possível entrar com um email não cadastrado | Alerta/Não é possível entrar |
 | **LOGIN-003** | Não deve ser possível entrar com uma senha incorreta | Alerta/Não é possível entrar |
 | **LOGIN-004** | Deve ser possível ir para o cadastro | Redireciona para o cadastro |
@@ -51,9 +51,10 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **HOME-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **HOME-001** | Deve renderizar todos os componentes corretamente | Todos os campos e botões essenciais estão presentes |
 | **HOME-002** | Deve ser possível ir para a busca de vagas ao clicar no botão | Redireciona para busca de vagas |
 | **HOME-003** | Deve ser possível ir para o cadastro de vagas ao clicar no botão | Redireciona paro cadastro de vagas |
+| **HOME-004** | Deve ser possível ver as reservas em andamento | Exibe as reservas corretamente |
 
 ## 4 - Tela de busca de vagas
 
@@ -61,7 +62,7 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **BUSCA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **BUSCA-001** | Deve renderizar todos os componentes corretamente | Todos os campos e botões essenciais estão presentes |
 | **BUSCA-002** | Deve ser possível filtrar os resultados por preço | Exibe resultados de acordo com o filtro de preço |
 | **BUSCA-003** | Deve ser possível filtrar os resultados por data | Exibe resultados de acordo com o filtro de data |
 | **BUSCA-004** | Deve ser possível filtrar os resultados por horário | Exibe resultados de acordo com o filtro de horário |
@@ -73,7 +74,7 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **MENU-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **MENU-001** | Deve renderizar todos os componentes corretamente | Todos os campos e botões essenciais estão presentes |
 | **MENU-002** | Deve ser possível ir para a tela de notificações ao clicar no botão | Redireciona para a tela de notificações |
 | **MENU-003** | Deve ser possível ir para a tela de mensagens ao clicar no botão | Redireciona para a tela de mensagens |
 | **MENU-004** | Deve ser possível abrir o menu de mais opções ao clicar no botão | Abre o menu de mais opções |
@@ -89,7 +90,7 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **NOVA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **NOVA-001** | Deve renderizar todos os componentes corretamente | Todos os campos e botões essenciais estão presentes |
 | **NOVA-002** | Deve ser possível ver todos os condomínios dos quais o usuário faz parte na listagem | Todos os condomínios válidos listados |
 | **NOVA-003** | Não deve ser possível ver condomínios dos quais o usuário não faz parte na listagem | Condomínios inválidos não são listados |
 | **NOVA-004** | Não deve ser possível criar uma vaga com a data e hora final menor que a inicial | Alerta/Não é possível criar |
@@ -102,7 +103,7 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
-| **VAGA-001** | Deve renderizar todos os componente corretamente | Todos os campos e botões essenciais estão presentes |
+| **VAGA-001** | Deve renderizar todos os componentes corretamente | Todos os campos e botões essenciais estão presentes |
 | **VAGA-002** | Deve ser possível enviar uma dúvida sobre a vaga | Mensagem publicada na página |
 | **VAGA-003** | Deve ser possível ir ao perfil do anunciante ao clicar no link | Redireciona para o perfil |
 | **VAGA-004** | Deve ser possível enviar uma dúvida sobre a vaga | Mensagem publicada na página |
@@ -112,7 +113,7 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 
 ## 7 - Tela de notificações
 
->RF-009, RF-014
+>RF-009, RF-014, RF-017
 
 | **Caso de teste** | **Descrição** | **Resultado esperado** |
 |---|---|---|
@@ -126,3 +127,28 @@ Definimos um plano de testes unitários para cada página a serem realizados em 
 | **NOTA-008** | Deve ser possível ir para a página da vaga ao clicar na notificação de dúvida | Redireciona para página correta |
 | **NOTA-009** | Deve ser possível ver notificação caso uma solicitação de reserva feita pelo usuário seja rejeitada | Notificação presente |
 | **NOTA-010** | Deve ser possível ver notificação caso uma solicitação de reserva feita pelo usuário seja aprovada | Notificação presente |
+| **NOTA-011** | Administrador: Deve ser possível ver notificação caso uma reclamação sobre um usuário seja feita | Notificação presente |
+
+## 8 - Tela de mensagens e tela de conversa
+
+>RF-009, RF-017
+
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
+|---|---|---|
+| **CHAT-001** | Deve renderizar todos os componentes corretamente | Todos os campos e botões essenciais estão presentes |
+| **CHAT-002** | Deve ser possível visualizar uma listagem de mensagens recentes sobre as reservas ou reclamações do usuário | Mensagens listadas corretamente |
+| **CHAT-003** | Deve ser possível abrir uma conversa ao clicar sobre a mensagem | Redireciona para a tela da conversa |
+| **CHAT-004** | Deve ser possível responder a uma mensagem na tela da conversa  | Mensagens enviada |
+| **VAGA-005** | Deve ser possível ir para a página da vaga ao clicar no link da página da conversa | Redireciona corretamente |
+
+## 9 - Tela de reclamações: histórico e nova reclamação
+
+>RF-017
+
+| **Caso de teste** | **Descrição** | **Resultado esperado** |
+|---|---|---|
+| **RECLAMACAO-001** | Deve renderizar todos os componentes corretamente | Listagem de reclamações exibida corretamente |
+| **RECLAMACAO-002** | Deve ser possível ir para a página de conversa aberta com o administrador sobre uma reclamação ao clicar no botão | Redireciona para a página da conversa |
+| **RECLAMACAO-003** | Deve ser abrir o formulário de reclamação ao clicar na aba | Formulário exibido corretamente |
+| **RECLAMACAO-004** | Não deve ser possível enviar uma reclamação com dados incompletos | Alerta/Não é possível enviar |
+| **RECLAMACAO-005** | Deve ser possível enviar uma reclamacão com todos os dados preenchidos | Reclamação enviada |
