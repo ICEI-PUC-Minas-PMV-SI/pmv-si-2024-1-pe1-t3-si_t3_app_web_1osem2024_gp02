@@ -1,0 +1,12 @@
+button.aprovar {
+    border: 1px solid #087560;
+    background-color: #087560;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+button.recusar {
+    width: 100%;
+    border: 1px solid #4d4d4d;
+    background-color: white;
+    color: #4d4d4d;
+}

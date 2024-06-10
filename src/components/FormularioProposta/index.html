@@ -1,38 +1,30 @@
-<h4>Selecione o período de reserva</h4>
-<form id="form" onsubmit="enviarFormulario()" class="d-flex flex-column gap-3 px-3">
-    <div id="dateTime" class="d-flex flex-column gap-2">
-        <div class="container p-0">
-            <div class="row">
-                <p class="text-muted col-1">De:</p>
-
-                <div class="col d-flex gap-2">
-                    <input id="min-date" type="date" class="form-control w-75">
-
-                    <input id="min-time" type="time" class="form-control w-50">
-                </div>
-            </div>
+<h5 class="mb-3">Selecione o período de reserva</h5>
+<form id="form" onsubmit="enviarFormulario()" class="d-flex flex-column gap-3">
+    <div class="row align-items-center">
+        <p class="col-1 mb-0">De:</p>
+        <div class="col">
+            <input id="min-date" type="date" class="form-control">
         </div>
-
-        <div class="container p-0">
-            <div class="row">
-                <p class="text-muted col-1">Até:</p>
-
-
-                <div class="col d-flex gap-2">
-                    <input id="max-date" type="date" class="form-control w-75">
-
-                    <input id="max-time" type="time" class="form-control w-50">
-                </div>
-            </div>
+        <div class="col">
+            <input id="min-time" type="time" class="form-control">
         </div>
     </div>
-
+    <div class="row align-items-center">
+        <p class="col-1 mb-0">Até:</p>
+        <div class="col">
+            <input id="max-date" type="date" class="form-control">
+        </div>
+        <div class="col">
+            <input id="max-time" type="time" class="form-control">
+        </div>
+    </div>
+<!-- 
     <p id="totalvalor" class="m-0">
         <span class="text-muted">Total:</span>
         <strong class="lead">R$: 00,00</strong>
-    </p>
+    </p> -->
 
-    <div id="paymentMethods">
+    <!-- <div id="paymentMethods">
         <p class="text-muted m-1">Formas de pagamento:</p>
 
         <div class="form-check form-check-inline">
@@ -48,7 +40,7 @@
                 Pix
             </label>
         </div>
-    </div>
+    </div> -->
 
     <div class="d-grid">
         <button type="submit" class="btn btn-success" id="btnSalvar">
