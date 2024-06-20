@@ -13,37 +13,22 @@
 </head>
 
 <body>
-
     <section class="container">
-
         <section class="chat">
-            <section class="chat__messages">
-
-                <div class="message__self">test 1</div>
-
-                <div class="message__other">
-                    <span class="message__sender">usuario</span>
-                    test 2
-                </div>
-                <div class="message__self">test 3</div>
-
+            <section id="chatMessages" class="chat__messages">
             </section>
-
-            <form class="chat__form">
-                <input type="text" class="chat__input" placeholder="Digite uma mensagem" required>
+            <form id="form" class="chat__form">
+                <input id="input" type="text" class="chat__input" placeholder="Digite uma mensagem" required>
                 <button type="submit" class="chat__button">
                     <span class="material-symbols-outlined">
                         send
                     </span>
                 </button>
             </form>
-
-
         </section>
-
     </section>
-
-    <script src="./js/script.js"></script>
 </body>
+<script src="./js/script.js"></script>
+<script src="../../utilitarios/index.js"></script>
 
 </html>
