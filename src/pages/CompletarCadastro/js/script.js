@@ -31,9 +31,6 @@ let perfil = cadastros.find(cadastro => {
 document.addEventListener('DOMContentLoaded', function () { 
 
     condominios.forEach((condominio, index) => {
-
-        console.log(condominio)
-
         document.getElementById('inputCondominios').insertAdjacentHTML('afterend', ` \
                 <div class='form-checkbox' > \
                     <input type='checkbox' name='condominios' value='${condominio.id}' id='optionCondominio${index}'> \

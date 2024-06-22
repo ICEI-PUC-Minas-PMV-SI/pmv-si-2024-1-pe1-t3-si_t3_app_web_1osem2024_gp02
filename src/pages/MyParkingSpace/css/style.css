@@ -1,0 +1,64 @@
+@import "../../../components/Menu/css/style.css";
+@import "../../../components/logo/css/style.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+div {
+  margin: 10px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.texts {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.divForm {
+  margin-top: 20px;
+}
+
+.input {
+  height: 50px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.marginLeftNone {
+  margin-left: 0px;
+}
+
+.marginRightNone {
+  margin-right: 0px;
+}
+
+.inputPrice {
+  text-align: end;
+  padding-left: 50px;
+}
+
+.divDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inputDate {
+  width: 50%;
+}

@@ -11,76 +11,78 @@
 </head>
 
 <body>
-    <header id="header"></header>
-    <nav id="menu"></nav>
+    <iframe class="logo" src="../../components/logo/index.html" frameborder="0"></iframe>
     <div class="container">
-        <h1>
+        <H1>
             Nova Vaga
-        </h1>
+        </H1>
         <form id="form">
-            <div class="">
+            <div class="mb-3 divForm">
                 <label class="form-label texts">Condomínio</label>
-                <select class="form-select border-black border-opacity-50 input" id="condominioSelect" required>
+                <select class="form-select border-black border-opacity-50 input" id="floatingSelectGrid">
                     <option disabled selected>Selecione</option>
+                    <option value="Portal recanto das margaridas">Portal recanto das margaridas</option>
+                    <option value="Edifício Juca Lopes">Edifício Juca Lopes</option>
+                    <option value="Jardim da Colina">Jardim da Colina</option>
                 </select>
             </div>
-            <div class="">
+            <div class="mb-3 divForm">
                 <label class="form-label texts">Identificação da vaga</label>
                 <input type="text" class="form-control border-black border-opacity-50 input"
-                    placeholder="Informe sua vaga" required>
+                    placeholder="Informe sua vaga">
             </div>
-            <div class="">
+            <div class="mb-3 divForm">
                 <label class="form-label texts">Como chegar?</label>
                 <textarea class="form-control border-black border-opacity-50" aria-label="With textarea"
-                    placeholder="Conte detalhes de como chegar na vaga a partir da portaria" required></textarea>
+                    placeholder="Conte detalhes de como chegar na vaga a partir da portaria"></textarea>
             </div>
-            <div class="">
+            <div class="mb-3 divForm">
                 <label class="form-label texts">Tipo de negociação</label>
-                <select class="form-select border-black border-opacity-50 input" id="floatingSelectGrid" required>
+                <select class="form-select border-black border-opacity-50 input" id="floatingSelectGrid">
                     <option disabled selected>Selecione</option>
                     <option value="Dinheiro">Dinheiro</option>
                     <option value="Segundo">Cartão</option>
                     <option value="Pix">Pix</option>
                 </select>
             </div>
-            <div class="divDate">
+            <div class="mb-3 divForm divDate">
                 <div class="marginLeftNone inputDate">
                     <label for="min-date" class="form-label texts">Data de início</label>
-                    <input id="min-date" type="date" class="form-control border-black border-opacity-50 input" required>
+                    <input id="min-date" type="date" class="form-control border-black border-opacity-50 input">
                 </div>
 
                 <div class="marginLeftNone marginRightNone inputDate">
                     <label for="min-time" class="form-label texts">Hora de início</label>
-                    <input id="min-time" type="time" class="form-control border-black border-opacity-50 input" required>
+                    <input id="min-time" type="time" class="form-control border-black border-opacity-50 input">
                 </div>
             </div>
-            <div class="divDate">
+            <div class="mb-3 divForm divDate">
                 <div class="marginLeftNone inputDate">
                     <label for="min-date" class="form-label texts">Data de Término</label>
-                    <input id="min-date" type="date" class="form-control border-black border-opacity-50 input" required>
+                    <input id="min-date" type="date" class="form-control border-black border-opacity-50 input">
                 </div>
 
                 <div class="marginLeftNone marginRightNone inputDate">
                     <label for="min-time" class="form-label texts">Hora de Término</label>
-                    <input id="min-time" type="time" class="form-control border-black border-opacity-50 input" required>
+                    <input id="min-time" type="time" class="form-control border-black border-opacity-50 input">
                 </div>
             </div>
-            <div class="divPreco">
+            <div class="mb-3 divForm">
                 <label class="form-label texts">Valor</label>
-                <div class="input-group marginLeftNone">
+                <div class="input-group mb-3 marginLeftNone">
                     <span class="input-group-text border-black border-opacity-50 input">R$</span>
                     <input type="text" id="valor" class="form-control border-black border-opacity-50 input inputPrice"
-                        onkeyup="formatCoin(this)" placeholder="Informe o preço da vaga" required>
+                        onkeyup="formatCoin(this)" placeholder="Informe o preço da vaga">
                 </div>
             </div>
 
             <div class="mt-5">
-                <button type="submit" class="btn btn-success d-block w-100">Publicar vaga</button>
+                <button type="submit" class="btn btn-success">Publicar vaga</button>
             </div>
         </form>
     </div>
+    <iframe class="fixed-menu" src="../../components/Menu/index.html" frameborder="0"></iframe>
 </body>
-<script src="../../utilitarios/index.js"></script>
 <script src="./js/script.js"></script>
 
 </html>

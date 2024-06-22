@@ -1,6 +1,8 @@
 const form = document.getElementById('form');
 const cpfError = document.getElementById('cpf-error');
 const passwordError = document.getElementById('password-error');
+const cpfExiste = document.getElementById('cpfExiste');
+const emailExiste = document.getElementById('emailExiste');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -10,6 +12,7 @@ form.addEventListener('submit', e => {
 
     if (validarCPF(form[2].value)) return;
     if (form[3].value !== form[4].value) return passwordError.style.display = 'block';
+    if (validarInformacoes(data)) return;
 
     if (data.length > 0) {
         const index = data.length - 1;
@@ -40,12 +43,36 @@ form.addEventListener('submit', e => {
     window.location.href = '../Login/index.html';
 });
 
-function confirmPassword() {
-    return passwordError.style.display = 'none';
+const validarInformacoes = (data) => {
+    let semErro = false;
+    for (let i = 0; i < data.length; i++) {
+        if (data[i].email === form[1].value) {
+            semErro = true;
+            emailExiste.style.display = 'block';
+            break;
+        };
+
+        if (data[i].cpf === form[2].value) {
+            semErro = true;
+            cpfExiste.style.display = 'block';
+            break;
+        };
+    };
+
+    return semErro
 }
 
-function formatarCPF() {
+const confirmPassword = () => {
+    passwordError.style.display = 'none';
+}
+
+const emailDisplay = () => {
+    emailExiste.style.display = 'none';
+}
+
+const formatarCPF = () => {
     cpfError.style.display = 'none';
+    cpfExiste.style.display = 'none';
     let cpf = form[2].value.replace(/\D/g, '');
 
     if (cpf.length > 3 && cpf.length <= 6) {
@@ -59,7 +86,7 @@ function formatarCPF() {
     form[2].value = cpf;
 }
 
-function validarCPF(cpf) {
+const validarCPF = (cpf) => {
     cpf = cpf.replace(/[^\d]/g, '');
 
     if (cpf.length !== 11) return cpfError.style.display = 'block';
@@ -92,7 +119,7 @@ function validarCPF(cpf) {
     return false
 }
 
-function criptografarSenha(senha) {
+const criptografarSenha = (senha) => {
     let resultado = '';
     for (let i = 0; i < senha.length; i++) {
         let charCodeAt = senha.charCodeAt(i);

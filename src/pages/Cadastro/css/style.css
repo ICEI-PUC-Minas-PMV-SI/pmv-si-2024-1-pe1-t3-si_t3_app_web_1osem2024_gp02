@@ -225,12 +225,7 @@ button:hover {
 
 /* end badge */
 
-.cpfError {
-  color: red;
-  display: none;
-}
-
-.passwordError {
+.error {
   color: red;
   display: none;
 }

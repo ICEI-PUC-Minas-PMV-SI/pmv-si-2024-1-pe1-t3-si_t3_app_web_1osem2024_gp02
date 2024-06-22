@@ -28,14 +28,16 @@
                     </div>
                     <div>
                         <label for="inputEmail">E-mail:</label>
-                        <input class="w-100" type="email" name="email" id="inputEmail" value=""
+                        <input oninput="emailDisplay()" class="w-100" type="email" name="email" id="inputEmail" value=""
                             placeholder="exemplo@email.com" required>
+                        <span id="emailExiste" class="error">Esse email já está sendo usado</span>
                     </div>
                     <div>
                         <label for="inputCpf">CPF:</label>
                         <input oninput="formatarCPF()" class="w-100" type="text" name="cpf" id="cpf"
                             placeholder="000.000.000-00" maxlength="14" required>
-                        <span id="cpf-error" class="cpfError">CPF inválido</span>
+                        <span id="cpf-error" class="error">CPF inválido</span>
+                        <span id="cpfExiste" class="error">Esse cpf já está sendo usado</span>
                     </div>
                     <div>
                         <label for="inputPassword">Senha:</label>
@@ -44,9 +46,9 @@
                     </div>
                     <div>
                         <label for="inputConfirmPassword">Confirmar Senha:</label>
-                        <input oninput="confirmPassword()" class="w-100" type="password" name="confirm-password" id="inputConfirmPassword"
-                            placeholder="******" required>
-                        <span id="password-error" class="passwordError">As senhas devem ser iguais</span>
+                        <input oninput="confirmPassword()" class="w-100" type="password" name="confirm-password"
+                            id="inputConfirmPassword" placeholder="******" required>
+                        <span id="password-error" class="error">As senhas devem ser iguais</span>
                     </div>
                     <button type="submit" class="justify-content-center">
                         Cadastrar
