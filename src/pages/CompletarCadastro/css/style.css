@@ -1,0 +1,77 @@
+/* tema */
+@import "../../../assets/css/theme.css";
+
+/* header */
+@import url('../../../components/Header/css/style.css');
+
+/* menu */
+@import url('../../../components/Menu/css/style.css');
+
+form {
+  margin-top: 40px;
+}
+
+textarea {
+  height: 120px;
+}
+
+.texts {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.divForm {
+  margin-top: 20px;
+}
+
+.input {
+  height: 50px;
+}
+
+.btn {
+  width: 100%;
+}
+
+.marginLeftNone {
+  margin-left: 0px;
+}
+
+.marginRightNone {
+  margin-right: 0px;
+}
+
+.inputPrice {
+  text-align: end;
+  padding-left: 50px;
+}
+
+.divDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.divPreco span {
+  margin-top: 8px;
+}
+
+.inputDate {
+  width: 50%;
+}
+
+.form-checkbox {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-checkbox label, .form-checkbox input {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}

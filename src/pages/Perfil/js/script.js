@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         : {nome: 'Fulano'};
 
     document.getElementById('nome').innerText = `${data.nome}`
+    document.getElementById('descricao').innerText = `${data.descricao}`
     document.getElementById('perfisAvali').innerHTML = `<div class="infoPerfil">
                 <img class="imgPerfilAvali" src="../../assets/img/perfil-sem-foto-1024x655.jpg.png" alt="">
                 <div class="textPerfil">

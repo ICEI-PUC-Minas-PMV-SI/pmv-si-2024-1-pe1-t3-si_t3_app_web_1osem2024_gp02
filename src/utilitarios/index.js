@@ -4,11 +4,18 @@ let notificacoes = JSON.parse(localStorage.getItem("Notificacoes"))
     : [];
 
 document.addEventListener('DOMContentLoaded', function () {
+    
     if (!JSON.parse(localStorage.getItem("Logado"))) {
         window.location.href = '../Login/index.html'
     }
 
     user = JSON.parse(localStorage.getItem("Logado"))
+
+    const url = window.location.href
+
+    if (!user.condominios && url.indexOf('CompletarCadastro') == -1) {
+        window.location.href = '../CompletarCadastro/index.html'
+    }
     
     loadComponent('header', '../../components/Header/index.html');
     loadComponent('menu', '../../components/Menu/index.html', {}, ativarNotificacao);

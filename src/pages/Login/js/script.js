@@ -11,8 +11,8 @@ form.addEventListener('submit', e => {
     });
 
     if (user) {
-        const { id, email, nome } = user
-        const dataArray = JSON.stringify({ id, email, nome });
+        const { id, email, nome, condominios } = user
+        const dataArray = JSON.stringify({ id, email, nome, condominios });
         localStorage.setItem("Logado", dataArray);
         alert("Login feito com sucesso.");
         window.location.href = '../Home/index.html';

@@ -12,6 +12,14 @@ let vagas = JSON.parse(localStorage.getItem("Vagas"))
 
 document.addEventListener('DOMContentLoaded', function () { 
 
+    
+    user.condominios.forEach(condominio => {
+
+        document.getElementById('condominioSelect').insertAdjacentHTML('afterbegin', `<option value='${condominio.nome}'>${condominio.nome}</option>`);
+        
+    });
+
+
     if (id) {
     
         vaga = vagas.find(vaga => {
@@ -83,6 +91,8 @@ form.addEventListener('submit', e => {
 
     const dataArray = JSON.stringify(vagas);
     localStorage.setItem("Vagas", dataArray);
+
+    window.location.href = '../MinhasVagas/index.html'
     
 });
 
