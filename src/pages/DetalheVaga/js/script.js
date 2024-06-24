@@ -9,21 +9,21 @@ let vagas = JSON.parse(localStorage.getItem("Vagas"))
     : [];
 
 document.addEventListener('DOMContentLoaded', function () {
-    
+
     if (id) {
-        
+
         vaga = vagas.find(vaga => {
             return vaga.id == id
         })
 
         if (vaga) {
-            
+
             document.getElementById("vagaNome").innerHTML = `Vaga ${vaga.nome}`
             document.getElementById("vagaNomeUsuario").innerHTML = vaga.locador && vaga.locatario == user.id ? vaga.locador.nome : vaga.locatario.nome
             document.getElementById("vagaDescricao").innerHTML = vaga.descricao
             document.getElementById("vagaDataInicial").innerHTML = formatDateTime(vaga.dataInicial, vaga.horaInicial)
             document.getElementById("vagaDataFinal").innerHTML = formatDateTime(vaga.dataFinal, vaga.horaFinal)
-            
+
             if (vaga.status == 'livre' || (vaga.status == 'solicitacao' && vaga.locador.id == user.id)) {
                 loadComponent('formularioProposta', '../../components/FormularioProposta/index.html', {}, preencherFormulario);
 
@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             window.location.href = '../PaginaNaoEncontrada/index.html'
         }
-    
+
     }
-    
+
 })
 
 function formatCoin(input) {
@@ -57,7 +57,7 @@ function preencherFormulario() {
     if (vaga.proposta) {
 
         const form = document.getElementById('form');
-        
+
         form[0].value = vaga.proposta.dataInicial
         form[1].value = vaga.proposta.horaInicial
         form[2].value = vaga.proposta.dataFinal
@@ -65,13 +65,13 @@ function preencherFormulario() {
         form[4].value = vaga.proposta.pagamento
 
         document.getElementById("btnSalvar").innerHTML = 'Atualizar Proposta'
-    
+
     }
 
 }
 
 function enviarFormulario() {
-    
+
     const form = document.getElementById('form');
 
     let data = {
@@ -105,22 +105,22 @@ function enviarFormulario() {
         vagaId: data.id,
         userId: data.locatario.id,
         tipo: 'solicitacao',
-        titulo: `Solicitação - Vaga ${ data.id }`,
-        descricao: `${ data.locador.nome } deseja utilizar sua vaga. Clique para visualizar.`,
+        titulo: `Solicitação - Vaga ${data.id}`,
+        descricao: `${data.locador.nome} deseja utilizar sua vaga. Clique para visualizar.`,
         visualizado: false
     })
 
     const dataNotificacoesArray = JSON.stringify(notificacoes);
     localStorage.setItem("Notificacoes", dataNotificacoesArray);
 
-    window.location.reload() 
-    
+    window.location.reload()
+
 }
 
 function atualizarStatus(status, id) {
-    
-    const data = vagas.map(vaga => { 
-        
+
+    const data = vagas.map(vaga => {
+
         if (vaga.id == id) {
 
             vaga.status = status
@@ -132,8 +132,8 @@ function atualizarStatus(status, id) {
                     vagaId: vaga.id,
                     userId: vaga.locador.id,
                     tipo: 'solicitacao',
-                    titulo: `Recusada - Vaga ${ vaga.id }`,
-                    descricao: `${ vaga.locatario.nome } recusou seu pedido de uso da vaga.`,
+                    titulo: `Recusada - Vaga ${vaga.id}`,
+                    descricao: `${vaga.locatario.nome} recusou seu pedido de uso da vaga.`,
                     visualizado: false
                 })
 
@@ -147,23 +147,56 @@ function atualizarStatus(status, id) {
                     vagaId: vaga.id,
                     userId: vaga.locador.id,
                     tipo: 'solicitacao',
-                    titulo: `Reservado - Vaga ${ vaga.id }`,
-                    descricao: `${ vaga.locatario.nome } aceitou seu pedido de uso da vaga.`,
+                    titulo: `Reservado - Vaga ${vaga.id}`,
+                    descricao: `${vaga.locatario.nome} aceitou seu pedido de uso da vaga.`,
                     visualizado: false
                 })
-                
+
             }
         }
-        
+
         return vaga;
     })
 
     const dataArray = JSON.stringify(vagas);
     localStorage.setItem("Vagas", dataArray);
-    
+
     const dataNotificacoesArray = JSON.stringify(notificacoes);
     localStorage.setItem("Notificacoes", dataNotificacoesArray);
-    
+
     window.location.reload()
-    
+
+}
+
+const pergunta = () => {
+    const menssagem = document.getElementById('message');
+    const chat = JSON.parse(localStorage.getItem("Chat")) || { chats: [] };
+    const chatJson = {
+        id: chat.chats.length + 1,
+        participantes: [{id: user.id, nome: user.nome}, {id: vaga.locatario.id, nome: vaga.locatario.nome}],
+        mensagens: []
+    };
+
+    if (chat.chats.length === 0) {
+        chatJson.mensagens.push({ texto: menssagem.value, enviadoPor: user.nome });
+        chat.chats.push(chatJson);
+    } else {
+        for (let i = 0; i < chat.chats.length; i++) {
+            if (chat.chats[i].participantes.includes(user.id) && chat.chats[i].participantes.includes(vaga.locatario.id)) {
+                chat.chats[i].mensagens.push({ texto: menssagem.value, enviadoPor: user.nome });
+                validador = false;
+                break;
+            } else {
+                if (validador && chat.chats.length === (i + 1)) {
+                    chatJson.mensagens.push({ texto: menssagem.value, enviadoPor: user.nome });
+                    chat.chats.push(chatJson);
+                    break;
+                };
+            }
+        };
+    };
+
+    localStorage.setItem("Chat", JSON.stringify(chat));
+    alert('Pergunta enviada');
+    window.location.href = '../Home/index.html';
 }

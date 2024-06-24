@@ -1,0 +1,204 @@
+/* header */
+@import url('../../../components/Header/css/style.css');
+
+/* menu */
+@import url('../../../components/Menu/css/style.css');
+
+Footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.align-items-center {
+  background-color: #0CA789;
+  border: none;
+  border-radius: 4px !important;
+  padding: 16px 24px;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+  font-weight: 700;
+  color: #FFFFFF;
+  display: block;
+}
+
+.imgPerfil {
+  height: 85px;
+  width: 85px;
+  margin-left: 10px;
+}
+
+.texts {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.notificationCard {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #acacac;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100px;
+  margin-top: 30px;
+}
+
+.notificationMessageCard {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+}
+
+.textCard {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+
+
+body {
+  height: 100%;
+  padding: 90px 0px 156px 0px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22.4px;
+  background-color: #F9F9F9;
+  color: #4F4F4F !important;
+}
+
+/* container */
+.container {
+padding: 0px 30px !important;   
+}
+/* end container */
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0CA789 !important;
+  font-weight: 400 !important;
+  text-align:start;
+}
+
+p {
+  text-align:start;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 61.6px;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 52.8px;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 35.2px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 26.4px;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 22px;
+}
+
+a {
+  color: #0CA789 !important;
+  text-decoration: none !important;
+  font-weight: 700;
+}
+
+/* end fonts */
+
+/* form */
+
+label {
+  margin-top: 24px;
+  font-weight: 700;
+  color: #4F4F4F;
+}
+
+input, textarea, select {
+  border: 1px solid #BDBDBD;
+  color: #4F4F4F;
+  padding: 16px 24px;
+  border-radius: 4px;
+  display: block;
+  margin-top: 8px !important;
+}
+/* end form */
+
+/* card */
+
+.card-link {
+  border: 1px solid #BDBDBD;
+  border-radius: 8px !important;
+  margin-top: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+/* end card */
+
+/* badge */
+
+.badge-primary {
+  background-color: #087560;
+  border-radius: 8px !important;
+  padding: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.badge-secondary {
+  background-color: #4F4F4F;
+  border-radius: 8px !important;
+  padding: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.badge-waiting {
+  background-color: #E2B93B;
+  border-radius: 8px !important;
+  padding: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* end badge */

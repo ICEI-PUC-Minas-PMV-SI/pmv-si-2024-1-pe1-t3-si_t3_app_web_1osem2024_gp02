@@ -7,31 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-    let validador = true;
     const pessoaMensagem = localStorage.getItem("PessoaMensagem") || "";
     const chat = JSON.parse(localStorage.getItem("Chat")) || { chats: [] };
-    const chatJson = {
-        id: chat.chats.length + 1,
-        participantes: [user.nome, pessoaMensagem],
-        mensagens: []
-    };
 
-    if (chat.chats.length === 0) {
-        chatJson.mensagens.push({ texto: input.value, enviadoPor: user.nome });
-        chat.chats.push(chatJson);
-    } else {
-        for (let i = 0; i < chat.chats.length; i++) {
-            if (chat.chats[i].participantes.includes(user.nome) && chat.chats[i].participantes.includes(pessoaMensagem)) {
-                chat.chats[i].mensagens.push({ texto: input.value, enviadoPor: user.nome });
-                validador = false;
-                break;
-            } else {
-                if (validador && chat.chats.length === (i + 1)) {
-                    chatJson.mensagens.push({ texto: input.value, enviadoPor: user.nome });
-                    chat.chats.push(chatJson);
-                    break;
-                };
-            }
+    for (let i = 0; i < chat.chats.length; i++) {
+        if (chat.chats[i].participantes.filter((val) => val.id === user.id).length > 0 && chat.chats[i].participantes.filter((val) => val.id === Number(pessoaMensagem)).length > 0) {
+            chat.chats[i].mensagens.push({ texto: input.value, enviadoPor: user.nome });
+            break;
         };
     };
 
@@ -46,14 +28,14 @@ form.addEventListener('submit', e => {
 });
 
 const carregarChat = () => {
-    const { nome } = JSON.parse(localStorage.getItem("Logado"));
+    const { nome, id } = JSON.parse(localStorage.getItem("Logado"));
     const pessoaMensagem = localStorage.getItem("PessoaMensagem") || "";
     const { chats } = JSON.parse(localStorage.getItem("Chat")) || {};
 
     if (!chats) return;
 
     chats.map((chat) => {
-        if (chat.participantes.includes(nome) && chat.participantes.includes(pessoaMensagem)) {
+        if (chat.participantes.filter((val) => val.id === id).length > 0 && chat.participantes.filter((val) => val.id === Number(pessoaMensagem)).length > 0) {
             chat.mensagens.map((mensagen) => {
                 if (mensagen.enviadoPor === nome) {
                     const chatMessages = document.getElementById('chatMessages');
