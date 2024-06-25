@@ -4,10 +4,10 @@
 
 Sua Vaga no Condômino, Sempre à Mão!
 
-## Identidade Visual (Marca, Design)
+## Identidade Visual 
 ![logo_vaga_livre](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/f39cd1a3-e51a-42b8-b408-8230a8a48890)
 
-## Conjunto de Slides (Estrutura)
+## Conjunto de Slides 
 ![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0001](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/8fa47643-8316-4e79-a97e-05d89964cd49)
 ![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0002](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/80459189-8f55-4bf8-8363-db3b6f6f53d3)
 ![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0003](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/7bd7094d-66d9-4a54-be84-639ce72545cb)
