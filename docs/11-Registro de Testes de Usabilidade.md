@@ -42,9 +42,11 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1ose
 | **Resultado esperado (dados inválidos)** | 1-Não é possível a recuperação da conta; 2-Mensagens de erro explicativas exibidas |
 | **Dados de entrada** | 1-E-mail;  |
 | **Dados de entrada (inválidos)** | 1-E-mail invalido;  |
-| **Resultado** |  |
+| **Resultado** | Falha |
 
-![Evidência:](./video/--.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/52a248cc-2ad1-4bc3-bf1e-12915100f85f
 
 | **Caso de Teste** | CT004 - Pagina Principal |
 |---|---|
@@ -54,7 +56,7 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1ose
 | **Resultado esperado (dados inválidos)** | 1-Não é possível realizar o redirecionamento; 2-Mensagens de erro explicativas exibidas |
 | **Resultado** |  |
 
-![Evidência:](./video/--.mov)
+Evidência:
 
 | **Caso de Teste** | CT05 - Gerenciamento de vagas |
 |---|---|
@@ -62,9 +64,11 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1ose
 | **Requisitos associados** | RF-005; RF-006; RF-0015; RNF-003; RNF-004; |
 | **Resultado esperado** | 1-Informações das vagas do usuário ; 2-Redirecionamento para pagina de edição de vaga; 3-Redirecionamento para pagina de criação de vaga; 4-Exclusão da vaga; |
 | **Resultado esperado (dados inválidos)** | 1-Não é possível editar, criar ou excluir uma vaga; 2-Mensagens de erro explicativas exibidas |
-| **Resultado** |  |
+| **Resultado** | Sucesso parcial: faltam opções de excluir a vaga ou criar uma nova vaga a partir desta tela |
 
-![Evidência:](./video/--.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/a834e7eb-0e69-44b2-ac9b-1f75a84e0db3
 
 | **Caso de Teste** | CT006 - Criação de vagas |
 |---|---|
@@ -74,9 +78,11 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1ose
 | **Resultado esperado (dados inválidos)** | 1-Não é possível criar a vaga; 2-Mensagens de erro explicativas exibidas |
 | **Dados de entrada** | 1-Nome/Número da vaga; 2- Endereço; 3- Meios de pagamento aceitáveis; 4- Data da disponibilidade; 5- Preço em R$ da locação; |
 | **Dados de entrada (inválidos)** | 1- Qualquer dos campos de preenchimento em branco; 2- data de disponibilidade passada, exemplo: 19/01/2020. |
-| **Resultado** |  |
+| **Resultado** | Sucesso parcial: é possível criar vagas com datas passadas |
 
-![Evidência:](./video/--.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/b163cf56-85ce-43fd-a66d-64482973d563
 
 | **Caso de Teste** | CT007 - Edição de vaga |
 |---|---|
@@ -107,9 +113,11 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1ose
 | **Resultado esperado (dados inválidos)** | 1- Não exibição das vagas disponíveis; 2- Exibição das vagas indisponíveis; |
 | **Dados de entrada** | 1-Condominio; 2-Data de inicio da locação; 3- Data de termino da locação; |
 | **Dados de entrada (inválidos)** | 1-Condominio invalido; 2-Data invalida; 3-Qualquer campo de preenchimento em branco. |
-| **Resultado** |  |
+| **Resultado** | Sucesso parcial: não é exibido o valor por vaga, não é possível filtrar os resultados |
 
-![Evidência:](./video/--.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/c24b28a0-2eba-4e8a-aae2-122285b94075
 
 | **Caso de Teste** | CT010 - Solicitação de reserva de vaga |
 |---|---|
@@ -163,9 +171,12 @@ https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1ose
 | **Requisitos associados** | RF-007; RNF-003; RNF-004; |
 | **Resultado esperado** | 1-Exibição das informações publicas do usuário; |
 | **Resultado esperado (dados inválidos)** | 1-Não exibição das informações; 2-Mensagens de erro explicativas exibidas |
-| **Resultado** |  |
+| **Resultado** | Sucesso |
 
-![Evidência:](./video/--.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/21f460fa-758d-4537-aa0f-afb8d6703c78
+
 
 | **Caso de Teste** | CT015- Reclamação |
 |---|---|
