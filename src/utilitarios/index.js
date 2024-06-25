@@ -95,7 +95,7 @@ function route(key, id = null) {
         },
         {
             key: 'mensagens',
-            href: '../Mensagens/index.html'
+            href: '../HistoricosChat/index.html'
         },
         {
             key: 'menu',
