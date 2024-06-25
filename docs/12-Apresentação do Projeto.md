@@ -1,40 +1,25 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+## VagaLivre
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+Sua Vaga no Condômino, Sempre à Mão!
 
-## Título do Projeto
+## Identidade Visual 
+![logo_vaga_livre](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/f39cd1a3-e51a-42b8-b408-8230a8a48890)
 
-Nome e marca do projeto
+## Conjunto de Slides 
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0001](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/8fa47643-8316-4e79-a97e-05d89964cd49)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0002](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/80459189-8f55-4bf8-8363-db3b6f6f53d3)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0003](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/7bd7094d-66d9-4a54-be84-639ce72545cb)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0004](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/9bd480d0-3400-48dd-bfe2-361ee0729665)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0005](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/5d7cd8c8-6cfc-4a87-bb08-c14235c0ed64)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0006](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/9d4a363b-c910-47fb-953f-133139b98560)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0007](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/10b953c6-975e-4a8a-8d78-92580a993200)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0008](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/29bcf30b-5275-4b44-954c-d56601731f90)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0009](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/9cf865bb-051b-49e6-809d-7772f54a52ac)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0010](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/f971d494-d196-4eca-96d4-4ec4c2688d2b)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0011](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/f3652d01-92de-47b5-a305-e7893244b08d)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0012](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/808a6339-798f-449f-8b65-e097a20f5775)
+![Puc_Minas_Projeto_Tuma_3___Grupo_2_pages-to-jpg-0013](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/161783513/14e5fe22-e889-4b9b-a3fe-ef8f0e2fc1a0)
 
-## Identidade Visual (Marca, Design)
-
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
-
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
-
-## Conjunto de Slides (Estrutura)
-
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos. Os arquivos devem ser postados na pasta [presentation](../presentation)
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
-
-## Vídeo de demonstração
-
-O grupo deverá gravar um vídeo de demonstração do site desenvolvido.
-
-> **Algumas informações úteis**
-> - O vídeo deve se limitar a 5 minutos e deve apresentar os objetivos do projeto antes de mostrar o sistema desenvolvido.
-> - O vídeo deve possuir uma narração que explica o que está sendo apresentado.
-> - Foque nas principais tarefas que o seu sistema desenvolveu. Não é necessário apresentar cada detalhe implementado.
-> - Não é necessário que todos os integrantes do grupo participem da gravação.
-> - Não é necessário que a face de algum integrante do grupo apareça na gravação.
-> - Uma ótima ferramenta open-source para gravação de vídeos é o [OBS](https://obsproject.com/pt-br/download)
 
