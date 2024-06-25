@@ -3,8 +3,22 @@ document.addEventListener('DOMContentLoaded', function() {
         ? JSON.parse(localStorage.getItem("Logado"))
         : {nome: 'Fulano'};
 
+    const vagas = JSON.parse(localStorage.getItem("Vagas"))
+        ? JSON.parse(localStorage.getItem("Vagas"))
+        : [];
+
+    const spaces = vagas.filter((vaga) => vaga.locatario.id === user.id);
+    const spacesNames = spaces.map((space) => space.nome).join(', ');
+    const location = data.condominios.map((condominio) => condominio.nome).join(', ');
+
+    console.log(spacesNames);
+
     document.getElementById('nome').innerText = `${data.nome}`
     document.getElementById('descricao').innerText = `${data.descricao}`
+    document.getElementById('location').appendChild(document.createTextNode(location));
+    document.getElementById('spacesOwned').appendChild(document.createTextNode(spacesNames));
+    document.getElementById('spacesAmount').innerText = spaces.length;
+
     document.getElementById('perfisAvali').innerHTML = `<div class="infoPerfil">
                 <img class="imgPerfilAvali" src="../../assets/img/perfil-sem-foto-1024x655.jpg.png" alt="">
                 <div class="textPerfil">
