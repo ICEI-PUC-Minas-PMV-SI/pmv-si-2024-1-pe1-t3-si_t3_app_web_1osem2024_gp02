@@ -1,22 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const data = JSON.parse(localStorage.getItem("Logado"))
-        ? JSON.parse(localStorage.getItem("Logado"))
-        : {nome: 'Fulano'};
-
-    const vagas = JSON.parse(localStorage.getItem("Vagas"))
-        ? JSON.parse(localStorage.getItem("Vagas"))
-        : [];
+    const data = JSON.parse(localStorage.getItem("Logado")) || {nome: 'Fulano'};
+    const vagas = JSON.parse(localStorage.getItem("Vagas")) || [];
 
     const spaces = vagas.filter((vaga) => vaga.locatario.id === user.id);
-    const spacesNames = spaces.map((space) => space.nome).join(', ');
-    const location = data.condominios.map((condominio) => condominio.nome).join(', ');
-
-    console.log(spacesNames);
+    const vagasNomes = spaces.map((space) => space.nome).join(', ');
+    const localizacao = data.condominios.map((condominio) => condominio.nome).join(', ');
+    const descricao = data.descricao || '';
+    const editButton = document.createElement('button');
+    editButton.innerText = 'Editar Perfil';
+    editButton.addEventListener('click', () => {
+        window.location.href = '../CompletarCadastro/index.html';
+    });
 
     document.getElementById('nome').innerText = `${data.nome}`
-    document.getElementById('descricao').innerText = `${data.descricao}`
-    document.getElementById('location').appendChild(document.createTextNode(location));
-    document.getElementById('spacesOwned').appendChild(document.createTextNode(spacesNames));
+    document.getElementById('descricao').appendChild(document.createTextNode(descricao));
+    document.getElementById('localizacao').appendChild(document.createTextNode(localizacao));
+    document.getElementById('vagasPossuidas').appendChild(document.createTextNode(vagasNomes));
+    document.getElementById('infoPerfil').insertAdjacentElement('afterend', editButton);
     document.getElementById('spacesAmount').innerText = spaces.length;
 
     document.getElementById('perfisAvali').innerHTML = `<div class="infoPerfil">

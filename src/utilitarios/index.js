@@ -98,6 +98,10 @@ function route(key, id = null) {
             href: '../HistoricosChat/index.html'
         },
         {
+            key: 'conversa',
+            href: '../ChatBase/index.html'
+        },
+        {
             key: 'menu',
             href: '../Menu/index.html'
         },
