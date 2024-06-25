@@ -14,7 +14,10 @@ Relatório com evidências dos testes e relatos dos usuários participantes, bas
 | **Dados de entrada (inválidos)** | 1-Caracteris inválidos na opção nome como %$#@!; 2-E-mail sem seguir formatação correta de Email, exemplo: usuario@provedor.com; 3-Cpf invalido, exemplo: menos de 11 dígitos; 4- Senha com menos que 8 caracteres, ou sem conter ao menos uma letra maiúscula, uma minúscula e  um numero; 5- Qualquer campo de preenchimento em branco. |
 | **Resultado** | Sucesso |
 
-![Evidência:](./video/CT001.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/fee15710-ac66-4038-9a39-4206affac271
+
 
 | **Caso de Teste** | CT002 - Login |
 |---|---|
@@ -24,9 +27,12 @@ Relatório com evidências dos testes e relatos dos usuários participantes, bas
 | **Resultado esperado (dados inválidos)** | 1-Não é possível realizar o login; 2-Mensagens de erro explicativas exibidas |
 | **Dados de entrada** | 1-E-mail; 2-Senha |
 | **Dados de entrada (inválidos)** | 1-E-mail invalido; 2-Senha invalida |
-| **Resultado** |  |
+| **Resultado** | Sucesso |
 
-![Evidência:](./video/--.mov)
+Evidência:
+
+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe1-t3-si_t3_app_web_1osem2024_gp02/assets/44041066/3347249d-64ff-4058-93c4-9c91a8d60fba
+
 
 | **Caso de Teste** | CT003 - Recuperação de conta |
 |---|---|
